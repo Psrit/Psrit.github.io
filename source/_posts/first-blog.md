@@ -5,7 +5,7 @@ tags:
 ---
 Hello World! 
 
-Well, as a " little white", I don't know what to say... 
+Well, as a "little white", I don't know what to say... 
 
 Emm... I think, the font is really ugly; the theme "huno" doesn't perform well on mobile devices. 
 
