@@ -1,15 +1,15 @@
 layout: '[post]'
-title: first blog
+title: First Blog
 date: 2016-10-30 20:46:46
 tags:
 ---
 Hello World! 
 
-Well, as a "small white", I don't know what to say... 
+Well, as a " little white", I don't know what to say... 
 
-Emm...I have to say: the font is ugly; the theme "huno" doesn't perform well on mobile devices. 
+Emm... I think, the font is really ugly; the theme "huno" doesn't perform well on mobile devices. 
 
-Also, I found that emoji is not supported...
+Also, I found that emoji was not supported... (although which is not something matters)
 
 中文倒是可以。
 
