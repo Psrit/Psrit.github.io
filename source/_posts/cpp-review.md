@@ -10,9 +10,7 @@ tags:
 
 ### 程序
 
-- 源程序：
-
-  用源语言写的，有待翻译的程序；
+- 源程序：用源语言写的，有待翻译的程序；
 
 - 目标程序；源程序通过翻译程序加工以后生成的机器语言程序；
 
@@ -32,7 +30,7 @@ $$
 (b\_k b\_{k - 1} \cdots b\_0 . b\_{-1} \cdots b\_{-n})R = \sum\_{i = -n}^k b\_i R^i
 $$
 
-如 $(11111111.11)\_2=1×2^7+1×2^6+1×2^5+1×2^4\\+1×2^3+1×2^2+1×2^1+1×2^0+1×2^{-1}+1×2^{-2} =(255.75)\_{10}$
+如 $(11111111.11)\_2=1×2^7+1×2^6+1×2^5+1×2^4\\\\+1×2^3+1×2^2+1×2^1+1×2^0+1×2^{-1}+1×2^{-2} =(255.75)\_{10}$
 
 - 十进制到$R$进制：
 
@@ -44,12 +42,12 @@ $$
 
     乘以$R​$取整：
     $$
-    \left.\begin{alignedat}{2}
-    0. & 3125 && \times 2 = {\color{red} 0}.625 \\
-    0. & 625   && \times 2 = {\color{red} 1}.25 \\
-    {\color{blue}0}. & 25     && \times 2 = {\color{red} 0}.5 \\
-    0. & 5       && \times 2 = {\color{red} 1}.0 \\
-    \end{alignedat}\right\}
+    \left\.\begin{alignedat}{2}
+    0\. & 3125 && \times 2 = {\color{red} 0}.625 \\\\
+    0\. & 625   && \times 2 = {\color{red} 1}.25 \\\\
+    {\color{blue}0}. & 25     && \times 2 = {\color{red} 0}.5 \\\\
+    0\. & 5       && \times 2 = {\color{red} 1}.0 \\\\
+    \end{alignedat}\right\\}
     \Rightarrow 0.3125\_{10} = 0.0101\_{2}
     $$
 
@@ -60,26 +58,11 @@ $$
 
   $$
   \mathrm{
-  (1011010.10)\_2 = (\underline{001}\ \underline{011}\ \underline{010} . \underline{100})\_2 = (132.4)\_8 \\
-  (1011010.10)\_2 = (\underline{0101}\ \underline{1010} . \underline{1000})\_2 = (5A.8)\_{16} \\
+  (1011010.10)\_2 = (\underline{001}\ \underline{011}\ \underline{010} . \underline{100})\_2 = (132.4)\_8 \\\\
+  (1011010.10)\_2 = (\underline{0101}\ \underline{1010} . \underline{1000})\_2 = (5A.8)\_{16} \\\\
   (F7)\_{16} = (\underline{1111}\ \underline{0111})\_2 = (11110111)\_2
   }
   $$
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ### 二进制数的编码
@@ -97,8 +80,8 @@ $$
     符号位不变(仍用1 表示)，其余各位取反(0 变1，1 变0)，例如：
     $$
     \begin{alignedat}{2}
-    X &= & \ -&\ 1100110 \\
-    [X]\_原 & = & 1&\ 1100110 \\
+    X &= & \ -&\ 1100110 \\\\
+    [X]\_原 & = & 1&\ 1100110 \\\\
     [X]\_反 & = & 1&\ 0011001
     \end{alignedat}
     $$
@@ -141,21 +124,21 @@ $$
 
 - 各基本类型的取值范围
 
-  |        类型名         | 长度（字节） |                   取值范围                   |
-  | :----------------: | :----: | :--------------------------------------: |
-  |        bool        |   1    |               false, true                |
-  |        char        |   1    |                -128 ~ 127                |
-  |    signed char     |   1    |                -128 ~ 127                |
-  |   unsigned char    |   1    |                 0 ~ 255                  |
-  |   (signed) short   |   2    |              -32768 ~ 32767              |
-  |   unsigned short   |   2    |                0 ~ 65535                 |
-  | (signed) int/long  |   4    |           -2 ^ 31 ~ 2 ^ 31 - 1           |
-  | unsigned int/long  |   4    |              0 ~ 2 ^ 32 - 1              |
-  |     long long      |   8    |           -2 ^ 63 ~ 2 ^ 63 - 1           |
-  | unsigned long long |   8    |              0 ~ 2 ^ 64 - 1              |
-  |       float        |   4    | (绝对值范围, 下同) 3.4 × 10 ^ (-38) ~ 3.4 × 10 ^ 38 |
-  |       double       |   8    |    1.7 × 10 ^ (-308) ~ 1.7 × 10 ^ 308    |
-  |    long double     |   8    |    1.7 × 10 ^ (-308) ~ 1.7 × 10 ^ 308    |
+|        类型名         | 长度（字节） |                   取值范围                   |
+| :----------------: | :----: | :--------------------------------------: |
+|        bool        |   1    |               false, true                |
+|        char        |   1    |                -128 ~ 127                |
+|    signed char     |   1    |                -128 ~ 127                |
+|   unsigned char    |   1    |                 0 ~ 255                  |
+|   (signed) short   |   2    |              -32768 ~ 32767              |
+|   unsigned short   |   2    |                0 ~ 65535                 |
+| (signed) int/long  |   4    |           -2 ^ 31 ~ 2 ^ 31 - 1           |
+| unsigned int/long  |   4    |              0 ~ 2 ^ 32 - 1              |
+|     long long      |   8    |           -2 ^ 63 ~ 2 ^ 63 - 1           |
+| unsigned long long |   8    |              0 ~ 2 ^ 64 - 1              |
+|       float        |   4    | (绝对值范围, 下同) 3.4 × 10 ^ (-38) ~ 3.4 × 10 ^ 38 |
+|       double       |   8    |    1.7 × 10 ^ (-308) ~ 1.7 × 10 ^ 308    |
+|    long double     |   8    |    1.7 × 10 ^ (-308) ~ 1.7 × 10 ^ 308    |
 
 注：以上针对32位处理器。64位机器中long == long long，其他类型没有考证过。
 
@@ -169,7 +152,7 @@ $$
 - 浮点常量：如12.5，-12.5，0.345E+2，-34.4E-3
 
   - 指数形式下，整数和小数部分可省略其一
-  - 默认是double型。添加后缀F (f)可使其成为float型，如12.3f
+  - 默认是double型。添加后缀 F (f) 可使其成为float型，如12.3f
 
 - 字符和字符串：
 
@@ -179,12 +162,12 @@ $$
 
   - 可以添加前缀以改变字符（串）常量的类型：
 
-    | 前缀   | 含义                  | 类型       |
-    | ---- | :------------------ | -------- |
-    | u    | Unicode 16字符        | char16_t |
-    | U    | Unicode 32字符        | char32_t |
-    | L    | 宽字符(What's that???) | wchar_t  |
-    | u8   | UTF-8 (仅用于字符串字面常量)  | char     |
+| 前缀   | 含义                  | 类型       |
+| ---- | :------------------ | -------- |
+| u    | Unicode 16字符        | char16_t |
+| U    | Unicode 32字符        | char32_t |
+| L    | 宽字符(What's that???) | wchar_t  |
+| u8   | UTF-8 (仅用于字符串字面常量)  | char     |
 
 ### C++变量
 
@@ -263,9 +246,9 @@ $$
 #include <iostream>
 int main( ) 
 {
-	using namespace std;
+    using namespace std;
     float i = 1.1F, pi = 3.1415;
-	cout << setw(5) << setprecision(3) << pi << endl; // print: _3.14 ?
+    cout << setw(5) << setprecision(3) << pi << endl; // print: _3.14 ?
     cout << /*fixed <<*/ i << endl;   // fixed is the default // print: 1.1
     cout << scientific << i << endl; // print: 1.100000e+000
     cout.precision( 8 );
@@ -278,54 +261,54 @@ int main( )
 
 - if-else: 
 
-  ```c++
-  if (expr1)
-      statement1 
-  [else if (expr2)
-  	statement2
-  else
-  	statement3]
-  ```
+    ```c++
+    if (expr1)
+        statement1 
+    [else if (expr2)
+        statement2
+    else
+        statement3]
+    ```
 
   The **else** clause of an **if...else** statement is associated with the closest previous **if** statement in the same scope that does not have a corresponding **else** statement. (就进匹配原则)
 
 - switch-case: 
 
-  ```c++
-  switch (表达式)
-  { 
-  case 常量表达式 1: 
-      语句1 // Here {} is not needed. 
-  case 常量表达式 2: 语句2
-  ┆
-  case 常量表达式 n: 语句n
-  default: 语句n+1
-  }
-  ```
+    ```c++
+    switch (表达式)
+    { 
+    case 常量表达式 1: 
+        语句1 // Here {} is not needed. 
+    case 常量表达式 2: 语句2
+    ┆
+    case 常量表达式 n: 语句n
+    default: 语句n+1
+    }
+    ```
 
 - while:
 
-  ````c++
-  while (expr)
-  	statement
-  ````
+    ```c++
+    while (expr)
+        statement
+    ```
 
-  ```c++
-  do
-  	statement
-  while (expr)
-  ```
+    ```c++
+    do
+        statement
+    while (expr)
+    ```
 
 - for: 
 
-  ```c++
-  for (init_expression; cond_expression; loop_expression)
-  	statement
-  ```
-  ```c++
-  for (iterate_var : expression)
-  	statement 
-  ```
+    ```c++
+    for (init_expression; cond_expression; loop_expression)
+        statement
+    ```
+    ```c++
+    for (iterate_var : expression)
+        statement 
+    ```
 
 ### 自定义类型 (typedef, using, enum, auto, decltype)
 
@@ -428,24 +411,24 @@ int main( )
 
 - 有默认参数的形参必须列在形参列表最右，即默认参数值右边不能有/无默认值的参数。 调用时，实参与形参从左向右依次结合。
 
-- ```c++
-  int add(int x = 5, int y = 6); // 默认参数值必须在这里给出
-  int main() {
-  	add();
-  }
-  int add(int x, int y) { // 这里不能再指定默认值了
-  	return x + y;
-  }
-  ```
+-   ```c++
+    int add(int x = 5, int y = 6); // 默认参数值必须在这里给出
+    int main() {
+        add();
+    }
+    int add(int x, int y) { // 这里不能再指定默认值了
+        return x + y;
+    }
+    ```
 
-  ```c++
-  int add(int x = 5, int y = 6) { // 默认参数值必须在这里给出
-  	return x + y;
-  }
-  int main() {
-  	add();
-  }
-  ```
+    ```c++
+    int add(int x = 5, int y = 6) { // 默认参数值必须在这里给出
+        return x + y;
+    }
+    int main() {
+        add();
+    }
+    ```
 
 -------
 
@@ -455,11 +438,11 @@ int main( )
 
 - 访问控制：
 
-  | 类型        | 对象内部函数和数据            | 同类型其他对象 | 子类   | 外部函数和外部类               |
-  | --------- | -------------------- | ------- | ---- | ---------------------- |
-  | public    | 可以访问（直接使用成员名访问；本列下同） |         | 可以访问 | 可以访问（使用`对象名.成员名`的方式访问） |
-  | protected | 可以访问                 |         |      | 不可访问                   |
-  | private   | 可以访问                 |         |      | 不可访问                   |
+| 类型        | 对象内部函数和数据            | 同类型其他对象 | 子类   | 外部函数和外部类               |
+| --------- | -------------------- | ------- | ---- | ---------------------- |
+| public    | 可以访问（直接使用成员名访问；本列下同） |         | 可以访问 | 可以访问（使用`对象名.成员名`的方式访问） |
+| protected | 可以访问                 |         |      | 不可访问                   |
+| private   | 可以访问                 |         |      | 不可访问                   |
 
 - 构造函数
 
@@ -490,8 +473,8 @@ int main( )
 
     ```java
     public class Employee extends Person {
-    	protected int employeeNumber;
-    	protected String workPhoneNumber;
+        protected int employeeNumber;
+        protected String workPhoneNumber;
     	
         public Employee(String aName, String aPhoneNumber, String anAddress, int aNumber, String aWorkPhoneNumber){
             //显式调用父类构造方法Person(String, String, String)
@@ -508,6 +491,7 @@ int main( )
         public Employee(){
             //隐含调用父类构造方法Person()
             this(0, ""); // 看见没！
+        }
     } // 有点跑题了o.O
     ```
 
