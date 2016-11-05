@@ -409,26 +409,26 @@ int main( )
 
 ### 默认参数值
 
-- 有默认参数的形参必须列在形参列表最右，即默认参数值右边不能有/无默认值的参数。 调用时，实参与形参从左向右依次结合。
+有默认参数的形参必须列在形参列表最右，即默认参数值右边不能有/无默认值的参数。 调用时，实参与形参从左向右依次结合。
 
--   ```c++
-    int add(int x = 5, int y = 6); // 默认参数值必须在这里给出
-    int main() {
-        add();
-    }
-    int add(int x, int y) { // 这里不能再指定默认值了
-        return x + y;
-    }
-    ```
+```c++
+int add(int x = 5, int y = 6); // 默认参数值必须在这里给出
+int main() {
+    add();
+}
+int add(int x, int y) { // 这里不能再指定默认值了
+    return x + y;
+}
+```
 
-    ```c++
-    int add(int x = 5, int y = 6) { // 默认参数值必须在这里给出
-        return x + y;
-    }
-    int main() {
-        add();
-    }
-    ```
+```c++
+int add(int x = 5, int y = 6) { // 默认参数值必须在这里给出
+    return x + y;
+}
+int main() {
+    add();
+}
+```
 
 -------
 
@@ -638,8 +638,6 @@ Side s = Side::Right;
     ```
 
 ### const
-
-### 常对象：`const 类名 对象名;` or `类名 const 对象名;`
 
 - 常对象：`const 类名 对象名;` or `类名 const 对象名;`
 
