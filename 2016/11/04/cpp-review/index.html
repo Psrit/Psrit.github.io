@@ -86,55 +86,49 @@
 
 <meta name="description" content="程序
 源程序：用源语言写的，有待翻译的程序；
-
 目标程序；源程序通过翻译程序加工以后生成的机器语言程序；
-
 可执行程序：连接目标程序以及库中的某些文件，生成的一个可执行文件（如 .exe on Windows）
-
 
 三种不同类型的翻译程序
 汇编程序：将汇编语言源程序翻译成目标程序；
 编译程序：将高级语言源程序翻译成目标程序；
 解释程序：将高级语言源程序翻译成机器指令，边翻译边执行。
 
-进制转换">
+进制转换
+$R$">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C++总结">
 <meta property="og:url" content="http://yoursite.com/2016/11/04/cpp-review/index.html">
 <meta property="og:site_name" content="Psrit's Blog">
 <meta property="og:description" content="程序
 源程序：用源语言写的，有待翻译的程序；
-
 目标程序；源程序通过翻译程序加工以后生成的机器语言程序；
-
 可执行程序：连接目标程序以及库中的某些文件，生成的一个可执行文件（如 .exe on Windows）
-
 
 三种不同类型的翻译程序
 汇编程序：将汇编语言源程序翻译成目标程序；
 编译程序：将高级语言源程序翻译成目标程序；
 解释程序：将高级语言源程序翻译成机器指令，边翻译边执行。
 
-进制转换">
+进制转换
+$R$">
 <meta property="og:image" content="https://worldvectorlogo.com/logos/python-5.svg">
 <meta property="og:image" content="https://worldvectorlogo.com/logos/java-14.svg">
-<meta property="og:updated_time" content="2016-11-05T13:53:18.298Z">
+<meta property="og:updated_time" content="2016-11-05T16:11:57.308Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++总结">
 <meta name="twitter:description" content="程序
 源程序：用源语言写的，有待翻译的程序；
-
 目标程序；源程序通过翻译程序加工以后生成的机器语言程序；
-
 可执行程序：连接目标程序以及库中的某些文件，生成的一个可执行文件（如 .exe on Windows）
-
 
 三种不同类型的翻译程序
 汇编程序：将汇编语言源程序翻译成目标程序；
 编译程序：将高级语言源程序翻译成目标程序；
 解释程序：将高级语言源程序翻译成机器指令，边翻译边执行。
 
-进制转换">
+进制转换
+$R$">
 <meta name="twitter:image" content="https://worldvectorlogo.com/logos/python-5.svg">
 
 
@@ -323,12 +317,9 @@
       
         <hr>
 <h3 id="程序"><a href="#程序" class="headerlink" title="程序"></a>程序</h3><ul>
-<li><p>源程序：用源语言写的，有待翻译的程序；</p>
-</li>
-<li><p>目标程序；源程序通过翻译程序加工以后生成的机器语言程序；</p>
-</li>
-<li><p>可执行程序：连接目标程序以及库中的某些文件，生成的一个可执行文件（如 .exe on Windows）</p>
-</li>
+<li>源程序：用源语言写的，有待翻译的程序；</li>
+<li>目标程序；源程序通过翻译程序加工以后生成的机器语言程序；</li>
+<li>可执行程序：连接目标程序以及库中的某些文件，生成的一个可执行文件（如 .exe on Windows）</li>
 </ul>
 <h3 id="三种不同类型的翻译程序"><a href="#三种不同类型的翻译程序" class="headerlink" title="三种不同类型的翻译程序"></a>三种不同类型的翻译程序</h3><ul>
 <li>汇编程序：将汇编语言源程序翻译成目标程序；</li>
@@ -336,54 +327,34 @@
 <li>解释程序：将高级语言源程序翻译成机器指令，边翻译边执行。</li>
 </ul>
 <h3 id="进制转换"><a href="#进制转换" class="headerlink" title="进制转换"></a>进制转换</h3><ul>
-<li>$R$进制到十进制：</li>
-</ul>
-<p>$$<br>(b_k b_{k - 1} \cdots b_0 . b_{-1} \cdots b_{-n})_R = \sum_{i = -n}^k b_i R^i<br>$$</p>
-<p>如 $(11111111.11)_2=1×2^7+1×2^6+1×2^5+1×2^4\\+1×2^3+1×2^2+1×2^1+1×2^0+1×2^{-1}+1×2^{-2} =(255.75)_{10}$</p>
-<ul>
-<li><p>十进制到$R$进制：</p>
-<ul>
-<li><p>整数：</p>
-<p>除以$R$取余</p>
-</li>
-<li><p>小数：</p>
-<p>乘以$R​$取整：<br>$$<br>\left.\begin{alignedat}{2}<br>0. &amp; 3125 &amp;&amp; \times 2 = {\color{red} 0}.625 \\<br>0. &amp; 625   &amp;&amp; \times 2 = {\color{red} 1}.25 \\<br>{\color{blue}0}. &amp; 25     &amp;&amp; \times 2 = {\color{red} 0}.5 \\<br>0. &amp; 5       &amp;&amp; \times 2 = {\color{red} 1}.0 \\<br>\end{alignedat}\right\}<br>\Rightarrow 0.3125_{10} = 0.0101_{2}<br>$$</p>
-</li>
+<li>$R$进制到十进制：<br>$$<br>(b_k b_{k - 1} \cdots b_0 . b_{-1} \cdots b_{-n})_R = \sum_{i = -n}^k b_i R^i<br>$$<br>如 $(11111111.11)_2=1×2^7+1×2^6+1×2^5+1×2^4\\+1×2^3+1×2^2+1×2^1+1×2^0+1×2^{-1}+1×2^{-2} =(255.75)_{10}$</li>
+<li>十进制到$R$进制：<ul>
+<li>整数：<br>除以$R$取余</li>
+<li>小数：<br>乘以$R​$取整：<br>$$<br>\left.\begin{alignedat}{2}<br>0. &amp; 3125 &amp;&amp; \times 2 = {\color{red} 0}.625 \\<br>0. &amp; 625   &amp;&amp; \times 2 = {\color{red} 1}.25 \\<br>{\color{blue}0}. &amp; 25     &amp;&amp; \times 2 = {\color{red} 0}.5 \\<br>0. &amp; 5       &amp;&amp; \times 2 = {\color{red} 1}.0 \\<br>\end{alignedat}\right\}<br>\Rightarrow 0.3125_{10} = 0.0101_{2}<br>$$</li>
 </ul>
 </li>
-<li><p>二、八、十六进制快速转换：</p>
-<ul>
+<li>二、八、十六进制快速转换：<ul>
 <li>1 位八进制数相当于3 位二进制数；</li>
-<li>1 位十六进制数相当于4 位二进制数。如：</li>
+<li>1 位十六进制数相当于4 位二进制数。如：<br>$$<br>\mathrm{<br>(1011010.10)_2 = (\underline{001}\ \underline{011}\ \underline{010} . \underline{100})_2 = (132.4)_8 \\<br>(1011010.10)_2 = (\underline{0101}\ \underline{1010} . \underline{1000})_2 = (5A.8)_{16} \\<br>(F7)_{16} = (\underline{1111}\ \underline{0111})_2 = (11110111)_2<br>}<br>$$</li>
 </ul>
-<p>$$<br>\mathrm{<br>(1011010.10)_2 = (\underline{001}\ \underline{011}\ \underline{010} . \underline{100})_2 = (132.4)_8 \\<br>(1011010.10)_2 = (\underline{0101}\ \underline{1010} . \underline{1000})_2 = (5A.8)_{16} \\<br>(F7)_{16} = (\underline{1111}\ \underline{0111})_2 = (11110111)_2<br>}<br>$$</p>
 </li>
 </ul>
 <h3 id="二进制数的编码"><a href="#二进制数的编码" class="headerlink" title="二进制数的编码"></a>二进制数的编码</h3><ul>
-<li><p>原码：</p>
-<ul>
+<li>原码：<ul>
 <li>符号-绝对值表示：0 → +; 1 → -</li>
 <li>缺点：0的表示不唯一（000…0 == 100…0）；进行四则运算时，符号位须单独处理，运算规则复杂。</li>
 </ul>
 </li>
-<li><p>反码（求补码时的中间码）：</p>
-<ul>
-<li><p>正数的反码与原码表示相同；</p>
-</li>
-<li><p>负数的反码与原码有如下关系：<br>符号位不变(仍用1 表示)，其余各位取反(0 变1，1 变0)，例如：<br>$$<br>\begin{alignedat}{2}<br>X &amp;= &amp; \ -&amp;\ 1100110 \\<br>[X]_原 &amp; = &amp; 1&amp;\ 1100110 \\<br>[X]_反 &amp; = &amp; 1&amp;\ 0011001<br>\end{alignedat}<br>$$</p>
-</li>
+<li>反码（求补码时的中间码）：<ul>
+<li>正数的反码与原码表示相同；</li>
+<li>负数的反码与原码有如下关系：<br>符号位不变(仍用1 表示)，其余各位取反(0 变1，1 变0)，例如：<br>$$<br>\begin{alignedat}{2}<br>X &amp;= &amp; \ -&amp;\ 1100110 \\<br>[X]_原 &amp; = &amp; 1&amp;\ 1100110 \\<br>[X]_反 &amp; = &amp; 1&amp;\ 0011001<br>\end{alignedat}<br>$$</li>
 </ul>
 </li>
-<li><p>补码：</p>
-<ul>
-<li><p>正数的补码与原码相同；</p>
-</li>
-<li><p>负数的补码由该数反码的末位加 1 求得，之前的$X$的补码应为：<br>$$<br>[X]_补 = 1\ 0011010<br>$$</p>
-</li>
-<li><p>对补码求补即得原码。</p>
-</li>
-<li><p>优点：（没体验过……）</p>
-<ul>
+<li>补码：<ul>
+<li>正数的补码与原码相同；</li>
+<li>负数的补码由该数反码的末位加 1 求得，之前的$X$的补码应为：<br>$$<br>[X]_补 = 1\ 0011010<br>$$</li>
+<li>对补码求补即得原码。</li>
+<li>优点：（没体验过……）<ul>
 <li>0 的表示唯一（即100…0 == 000…0）；</li>
 <li>符号位可作为数值参加运算；</li>
 <li>补码运算的结果仍为补码。</li>
@@ -398,17 +369,13 @@
 </ul>
 <hr>
 <h3 id="C-基本数据类型"><a href="#C-基本数据类型" class="headerlink" title="C++基本数据类型"></a>C++基本数据类型</h3><ul>
-<li><p>对于各种整数类型，ISO C++规定它们的大小满足：</p>
-<p>(signed/unsigned) char ≤ (unsigned) short int ≤ (unsigned) int ≤<br>(unsigned) long int ≤ long long int</p>
-</li>
-<li><p>字符串类型</p>
-<ul>
+<li>对于各种整数类型，ISO C++规定它们的大小满足：<br>(signed/unsigned) char ≤ (unsigned) short int ≤ (unsigned) int ≤<br>(unsigned) long int ≤ long long int</li>
+<li>字符串类型<ul>
 <li>有字符串常量，基本类型中没有字符串变量；</li>
 <li>采用字符数组存储字符串（C 风格的字符串）或标准C++类库中的String 类（C++风格的字符串）</li>
 </ul>
 </li>
-<li><p>各基本类型的取值范围</p>
-</li>
+<li>各基本类型的取值范围</li>
 </ul>
 <table>
 <thead>
@@ -488,26 +455,20 @@
 </table>
 <p>注：以上针对32位处理器。64位机器中long == long long，其他类型没有考证过。</p>
 <h3 id="C-常量"><a href="#C-常量" class="headerlink" title="C++常量"></a>C++常量</h3><ul>
-<li><p>整数常量：如12，010，0xfff</p>
-<ul>
+<li>整数常量：如12，010，0xfff<ul>
 <li>前缀：十进制：无；八进制：0；十六进制：0x</li>
 <li>后缀：L (or l)：类型至少是long；LL (or ll)：类型是long long；U (u)：unsigned类型</li>
 </ul>
 </li>
-<li><p>浮点常量：如12.5，-12.5，0.345E+2，-34.4E-3</p>
-<ul>
+<li>浮点常量：如12.5，-12.5，0.345E+2，-34.4E-3<ul>
 <li>指数形式下，整数和小数部分可省略其一</li>
 <li>默认是double型。添加后缀 F (f) 可使其成为float型，如12.3f</li>
 </ul>
 </li>
-<li><p>字符和字符串：</p>
-<ul>
-<li><p>C++转义字符列表：看书吧（P26）。这里不浪费纸张了，节约资源从小事做起。</p>
-</li>
-<li><p>字符串常量：”CHINA”。每个字符一个字节，别忘了末尾有’\0’。</p>
-</li>
-<li><p>可以添加前缀以改变字符（串）常量的类型：</p>
-</li>
+<li>字符和字符串：<ul>
+<li>C++转义字符列表：看书吧（P26）。这里不浪费纸张了，节约资源从小事做起。</li>
+<li>字符串常量：”CHINA”。每个字符一个字节，别忘了末尾有’\0’。</li>
+<li>可以添加前缀以改变字符（串）常量的类型：</li>
 </ul>
 </li>
 </ul>
@@ -543,8 +504,7 @@
 </tbody>
 </table>
 <h3 id="C-变量"><a href="#C-变量" class="headerlink" title="C++变量"></a>C++变量</h3><ul>
-<li><p>定义：<code>TYPE var1, var2, ... varn;</code>。<strong>变量的定义就是在给变量命名的时候分配内存空间。</strong></p>
-</li>
+<li>定义：<code>TYPE var1, var2, ... varn;</code>。<strong>变量的定义就是在给变量命名的时候分配内存空间。</strong></li>
 <li><p>初始化：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> a = <span class="number">0</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">a</span><span class="params">(<span class="number">0</span>)</span></span>;</div><div class="line"><span class="keyword">int</span> a = &#123;<span class="number">0</span>&#125;; <span class="comment">// 列表初始化，此时不允许信息丢失，如用double初始化int是不可以的（报错？），下同</span></div><div class="line"><span class="keyword">int</span> a&#123;<span class="number">0</span>&#125;;</div></pre></td></tr></table></figure>
 <p>未经初始化的变量，其值可能是<strong>随机的</strong>。</p>
@@ -555,13 +515,9 @@
 <li>符号常量在定义时一定要同时初始化，在程序中不能改变其值。</li>
 </ul>
 <h3 id="一些运算符"><a href="#一些运算符" class="headerlink" title="一些运算符"></a>一些运算符</h3><ul>
-<li><p>逗号运算：<code>expr1, expr2, ..., exprN</code>。逐次求解，最终结果为<code>exprN</code>的值。</p>
-<p>例如：<code>a = 3 * 5, a * 4</code>，最终结果为60.</p>
-</li>
-<li><p>关系运算：<code>&lt;, &lt;=, &gt;, &gt;=</code>和<code>==, !=</code>（前四个优先级高于后两个；前四个彼此之间优先级相同，后两个亦如是）</p>
-</li>
-<li><p>逻辑运算：</p>
-<ul>
+<li>逗号运算：<code>expr1, expr2, ..., exprN</code>。逐次求解，最终结果为<code>exprN</code>的值。<br>例如：<code>a = 3 * 5, a * 4</code>，最终结果为60.</li>
+<li>关系运算：<code>&lt;, &lt;=, &gt;, &gt;=</code>和<code>==, !=</code>（前四个优先级高于后两个；前四个彼此之间优先级相同，后两个亦如是）</li>
+<li>逻辑运算：<ul>
 <li>优先级排序：<code>! &gt; &amp;&amp; &gt; ||</code></li>
 <li>短路特性：<ul>
 <li><code>expr1 &amp;&amp; expr2</code>：expr1为false则直接返回false，不再求解expr2；为true则求解expr2，以expr2的结果作为最终结果；</li>
@@ -570,20 +526,9 @@
 </li>
 </ul>
 </li>
-<li><p>条件运算符：<code>boolean_expr ? expr1 : expr2</code>（优先级高于赋值运算符，低于逻辑运算符；返回值类型是expr1和expr2中较高的类型）</p>
-</li>
-<li><p><code>sizeof</code>：<code>sizeof(TYPE)</code> or <code>sizeof expr</code>，给出TYPE类型或expr的类型所占的字节数。</p>
-</li>
-<li><p>位运算和它们的“奇技淫巧”：</p>
-<p><code>char a = ... ; a = a &amp; 0xfe;</code>：a的最低一位设为0；</p>
-<p><code>char c = ... ; int a = ... ; c = a &amp; 0xff;</code>：取出a的最低一个字节；</p>
-<p><code>int a = ... ; a = a | 0xff;</code>：将a的最低一字节各位全设为1；</p>
-<p><code>0111 1010 ^ 0000 1111 == 0111 0101</code>：与0异或保持原值，与1异或取反；</p>
-<p><code>~</code>：人家是单纯的按位取反运算啦~；</p>
-<p><code>&lt;&lt;</code>：<strong>低位补0</strong>，高位舍弃；</p>
-<p><code>&gt;&gt;</code>：低位舍弃，<strong>高位补</strong><code>0 if 是无符号数 else 符号位</code>（是不是很熟悉的表达式:eyes:<img src="https://worldvectorlogo.com/logos/python-5.svg" style="width:3%; height:3%;">）</p>
-<p>运算符优先级的问题见课本P34。</p>
-</li>
+<li>条件运算符：<code>boolean_expr ? expr1 : expr2</code>（优先级高于赋值运算符，低于逻辑运算符；返回值类型是expr1和expr2中较高的类型）</li>
+<li><code>sizeof</code>：<code>sizeof(TYPE)</code> or <code>sizeof expr</code>，给出TYPE类型或expr的类型所占的字节数。</li>
+<li>位运算和它们的“奇技淫巧”：<br><code>char a = ... ; a = a &amp; 0xfe;</code>：a的最低一位设为0；<br><code>char c = ... ; int a = ... ; c = a &amp; 0xff;</code>：取出a的最低一个字节；<br><code>int a = ... ; a = a | 0xff;</code>：将a的最低一字节各位全设为1；<br><code>0111 1010 ^ 0000 1111 == 0111 0101</code>：与0异或保持原值，与1异或取反；<br><code>~</code>：人家是单纯的按位取反运算啦~；<br><code>&lt;&lt;</code>：<strong>低位补0</strong>，高位舍弃；<br><code>&gt;&gt;</code>：低位舍弃，<strong>高位补</strong><code>0 if 是无符号数 else 符号位</code>（是不是很熟悉的表达式:eyes:<img src="https://worldvectorlogo.com/logos/python-5.svg" style="width:3%; height:3%;">）<br>运算符优先级的问题见课本P34。</li>
 </ul>
 <h3 id="数据I-O流类库操纵符-需要iomanip"><a href="#数据I-O流类库操纵符-需要iomanip" class="headerlink" title="数据I/O流类库操纵符 (需要iomanip)"></a>数据I/O流类库操纵符 (需要iomanip)</h3><table>
 <thead>
@@ -656,35 +601,28 @@
 </li>
 <li><p>enum: </p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">enum</span> name &#123;enum_list&#125;; <span class="comment">// semicolon!!!</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
 <ul>
 <li>枚举元素具有默认值，也可以在声明时另行指定枚举元素的值；</li>
 <li>枚举值可以进行关系运算；</li>
 <li>整数值不能直接赋给枚举变量，如需要将整数赋值给枚举变量，应进行强制类型转换；</li>
-<li>枚举值可以赋给整型变量。</li>
+<li><p>枚举值可以赋给整型变量。</p>
+<ul>
+<li>auto和decltype: (讲道理这里需要继续学习。Take a cup of Java and enjoy C++. <img src="https://worldvectorlogo.com/logos/java-14.svg" style="width:3%; height:3%;">)</li>
 </ul>
-</li>
-<li><p>auto和decltype: (讲道理这里需要继续学习。Take a cup of Java and enjoy C++. <img src="https://worldvectorlogo.com/logos/java-14.svg" style="width:3%; height:3%;">)</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">auto</span> val = val1 + val2; <span class="comment">// val.getClass() == (val1 + val2).getClass()</span></div><div class="line"><span class="keyword">decltype</span>(i) j = <span class="number">2</span>; <span class="comment">// j.getClass() == i.getClass()</span></div></pre></td></tr></table></figure>
 </li>
 </ul>
 <hr>
 <h3 id="函数关键字-inline-constexpr"><a href="#函数关键字-inline-constexpr" class="headerlink" title="函数关键字 (inline, constexpr)"></a>函数关键字 (inline, constexpr)</h3><ul>
-<li><p>inline: </p>
-<p>使用内联函数可以使程序更快，因为它们消除了与函数调用关联的开销（编译时在调用处用函数体进行替换，节省了参数传递、控制转移等开销）。 内联展开的函数可以进行无法对普通函数使用的代码优化。编译器将内联扩展选项和关键字视为建议，不保证会对函数进行内联。</p>
-<p>虽然内联函数类似于宏（因为在编译时进行调用会展开函数代码），但内联函数是通过编译器分析的，而宏是通过预处理器展开的。 因此，二者存在很多重大差异，详见：<a href="https://msdn.microsoft.com/zh-cn/library/bw1hbe6y.aspx" target="_blank" rel="external">MSDN: 内联函数 (C++)</a>。</p>
-<p>“严格的”内联函数应当满足（其实写个 inline 函数不满足这些也是可以的……这时编译器可能不会将其内联化；我的数据结构作业都是这样的……）：</p>
-<ul>
+<li>inline:<br>使用内联函数可以使程序更快，因为它们消除了与函数调用关联的开销（编译时在调用处用函数体进行替换，节省了参数传递、控制转移等开销）。 内联展开的函数可以进行无法对普通函数使用的代码优化。编译器将内联扩展选项和关键字视为建议，不保证会对函数进行内联。<br>虽然内联函数类似于宏（因为在编译时进行调用会展开函数代码），但内联函数是通过编译器分析的，而宏是通过预处理器展开的。 因此，二者存在很多重大差异，详见：<a href="https://msdn.microsoft.com/zh-cn/library/bw1hbe6y.aspx" target="_blank" rel="external">MSDN: 内联函数 (C++)</a>。<br>“严格的”内联函数应当满足（其实写个 inline 函数不满足这些也是可以的……这时编译器可能不会将其内联化；我的数据结构作业都是这样的……）：<ul>
 <li>内联函数体不能有循环语句和 switch 语句；</li>
 <li>内联函数的定义必须出现在第一次被调用之前；</li>
 <li>对内联函数不能进行异常接口声明。</li>
 </ul>
 </li>
-</ul>
-<ul>
-<li><p>constexpr (if you use Visual Studio, VS2015 is required at least): </p>
-<p>关键字 constexpr 于 C++11 中引入并于 C++14 中得到改善。它表示<em>常数表达式</em>。与 const 相同，它可应用于变量，因此如果任何代码试图修改该值，均将引发编译器错误。与 const 不同，constexpr 也可应用于函数和类构造函数。</p>
-<p>constexpr 指示值或返回值是常数，并且<strong>如果可能，将在编译时计算值或返回值</strong>。每当需要 const 整数时（如在模板参数和数组声明中），均可使用 constexpr 整数值。当可以在编译时（而非运行时）计算某个值时，使用 constexpr 可以使程序运行速度更快、占用内存更少。</p>
-<p>为限制计算编译时常量的复杂性及其编译时间的潜在影响，C++14 标准要求常数表达式 (constant expression) 中所涉及的类型限定为文本类型，即一个 constexpr 变量或函数必须返回一个<strong>文本类型</strong>。所谓文本类型，是可在编译时确定其布局的类型 (whose layout can be determined at compile time)。以下均为文本类型：</p>
+<li><p>constexpr (if you use Visual Studio, VS2015 is required at least):<br>关键字 constexpr 于 C++11 中引入并于 C++14 中得到改善。它表示<em>常数表达式</em>。与 const 相同，它可应用于变量，因此如果任何代码试图修改该值，均将引发编译器错误。与 const 不同，constexpr 也可应用于函数和类构造函数。<br>constexpr 指示值或返回值是常数，并且<strong>如果可能，将在编译时计算值或返回值</strong>。每当需要 const 整数时（如在模板参数和数组声明中），均可使用 constexpr 整数值。当可以在编译时（而非运行时）计算某个值时，使用 constexpr 可以使程序运行速度更快、占用内存更少。<br>为限制计算编译时常量的复杂性及其编译时间的潜在影响，C++14 标准要求常数表达式 (constant expression) 中所涉及的类型限定为文本类型，即一个 constexpr 变量或函数必须返回一个<strong>文本类型</strong>。所谓文本类型，是可在编译时确定其布局的类型 (whose layout can be determined at compile time)。以下均为文本类型：</p>
 <ol>
 <li>void</li>
 <li>标量类型</li>
@@ -696,8 +634,7 @@
 <li><p>就<strong>变量</strong>而言，const 变量的初始化可以延迟到运行时，而 <strong>constexpr 变量必须在编译时进行初始化</strong>。如：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">constexpr</span> <span class="keyword">float</span> x = <span class="number">42.0</span>;</div><div class="line"><span class="keyword">constexpr</span> <span class="keyword">float</span> y&#123;<span class="number">108</span>&#125;;</div><div class="line"><span class="keyword">constexpr</span> <span class="keyword">float</span> z = <span class="built_in">exp</span>(<span class="number">5</span>, <span class="number">3</span>);</div><div class="line"><span class="keyword">constexpr</span> <span class="keyword">int</span> i; <span class="comment">// Error! Not initialized</span></div><div class="line"><span class="keyword">int</span> j = <span class="number">0</span>;</div><div class="line"><span class="keyword">constexpr</span> <span class="keyword">int</span> k = j + <span class="number">1</span>; <span class="comment">//Error! j not a constant expression</span></div></pre></td></tr></table></figure>
 </li>
-<li><p>就<strong>函数</strong>而言，constexpr 函数是在使用需要它的代码时，可以在编译时计算其返回值的函数。 <strong>constexpr 函数必须只接受并返回文本类型</strong>。<strong>当其参数为 constexpr 值并且在编译时使用代码需要返回值时</strong>（例如，初始化一个 constexpr 变量或提供一个非类型模板参数），它会生成<strong>编译时常量</strong> (a compile-time constant)。使用非 constexpr 参数调用时，或编译时不需要其值时，它将与普通函数 (a regular function) 一样，在运行时生成一个值（此双重行为使你无需编写同一函数的 constexpr 和非 constexpr 版本）。</p>
-<p>此外，根据课件 constexpr 修饰的函数在其所有参数都是 constexpr 时，一定返回 constexpr (really?) ；函数体中必须有且仅一条 return 语句。constexpr 变量例如：</p>
+<li><p>就<strong>函数</strong>而言，constexpr 函数是在使用需要它的代码时，可以在编译时计算其返回值的函数。 <strong>constexpr 函数必须只接受并返回文本类型</strong>。<strong>当其参数为 constexpr 值并且在编译时使用代码需要返回值时</strong>（例如，初始化一个 constexpr 变量或提供一个非类型模板参数），它会生成<strong>编译时常量</strong> (a compile-time constant)。使用非 constexpr 参数调用时，或编译时不需要其值时，它将与普通函数 (a regular function) 一样，在运行时生成一个值（此双重行为使你无需编写同一函数的 constexpr 和非 constexpr 版本）。<br>此外，根据课件 constexpr 修饰的函数在其所有参数都是 constexpr 时，一定返回 constexpr (really?) ；函数体中必须有且仅一条 return 语句。constexpr 变量例如：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> nonconst_var = <span class="number">100</span>;</div><div class="line"><span class="keyword">const</span> <span class="keyword">int</span> const_var1 = <span class="number">2</span>;</div><div class="line"><span class="keyword">const</span> <span class="keyword">int</span> const_var2 = nonconst_var;</div><div class="line"></div><div class="line"><span class="keyword">constexpr</span> <span class="keyword">int</span> constexpr_var1 = <span class="number">3</span> + const_var1 * <span class="number">4</span>; - 正确 </div><div class="line"><span class="keyword">constexpr</span> <span class="keyword">int</span> constexpr_var2 = <span class="number">3</span> + nonconst_var * <span class="number">4</span>;</div><div class="line"><span class="keyword">constexpr</span> <span class="keyword">int</span> constexpr_var3 = <span class="number">3</span> + const_var2 * <span class="number">4</span>;</div><div class="line"><span class="comment">// constexpr的变量的值必须是编译器在编译的时候就可以确定的。上例中因为nonconst_var的值在语法上来讲，运行期间可能被更改，所以编译期间无法确定，不属于常数表达式。因为const_var2是由非常数表达式来初始化的，所以const_var2也不是常数表达式。但const_var2本身的声明，定义及初始化是合法的。constexpr比const更严格，用来初始化constexpr_var2和constexpr_var3的也都不是常数表达式，所以他们的定义都是错误的。</span></div></pre></td></tr></table></figure>
 </li>
 </ul>
@@ -710,10 +647,8 @@
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> x = <span class="number">5</span>, <span class="keyword">int</span> y = <span class="number">6</span>)</span> </span>&#123; <span class="comment">// 默认参数值必须在这里给出</span></div><div class="line">    <span class="keyword">return</span> x + y;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    add();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <hr>
 <h3 id="类的成员"><a href="#类的成员" class="headerlink" title="类的成员"></a>类的成员</h3><ul>
-<li><p>可以为数据成员提供一个类内初始值。创建对象时，类内初始值用于初始化数据成员，没有初始值的成员将被默认初始化。</p>
-</li>
-<li><p>访问控制：</p>
-</li>
+<li>可以为数据成员提供一个类内初始值。创建对象时，类内初始值用于初始化数据成员，没有初始值的成员将被默认初始化。</li>
+<li>访问控制：</li>
 </ul>
 <table>
 <thead>
@@ -752,45 +687,36 @@
 <ul>
 <li><p>构造函数</p>
 <ul>
-<li><p>在对象创建时被自动调用。</p>
-</li>
-<li><p>默认构造函数是调用时不需要实参的构造函数，有以下两种形式（二者不可同时出现在类中，否则编译错误）：</p>
-<ul>
+<li>在对象创建时被自动调用。</li>
+<li>默认构造函数是调用时不需要实参的构造函数，有以下两种形式（二者不可同时出现在类中，否则编译错误）：<ul>
 <li>参数表为空；</li>
 <li>全部参数都有默认值。</li>
 </ul>
 </li>
-<li><p>若类中<strong>未定义构造函数</strong>，编译器将在需要时<strong>自动生成</strong>一个默认构造函数，其</p>
-<ul>
+<li>若类中<strong>未定义构造函数</strong>，编译器将在需要时<strong>自动生成</strong>一个默认构造函数，其<ul>
 <li>参数列表为空，不为数据成员设置初始值；</li>
 <li>如果类内定义了成员的初始值，则使用类内定义的初始值；</li>
 <li>如果没有定义类内的初始值，则以默认方式初始化（调用数据成员的默认构造函数）；</li>
 <li>基本数据类型的数据，默认初始化的值不确定。</li>
 </ul>
 </li>
-<li><p>若类中<strong>定义了构造函数</strong>，默认情况下编译器不会为类生成隐含的默认构造函数，这时建立对象时必须给出初始值以作为调用构造函数的实参。若仍希望编译器隐含地生成默认构造函数，可以使用<code>Clock() =default</code>。</p>
-</li>
+<li>若类中<strong>定义了构造函数</strong>，默认情况下编译器不会为类生成隐含的默认构造函数，这时建立对象时必须给出初始值以作为调用构造函数的实参。若仍希望编译器隐含地生成默认构造函数，可以使用<code>Clock() =default</code>。</li>
 <li><p>所谓<strong>委托构造函数</strong>，是使用类的其他构造函数执行初始化过程的构造函数。如</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Clock(<span class="keyword">int</span> h, <span class="keyword">int</span> m, <span class="keyword">int</span> s): hour(h), minute(m), secong(s) &#123;&#125;</div><div class="line">Clock(): Clock(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>) &#123;&#125; <span class="comment">// delegate constructor</span></div></pre></td></tr></table></figure>
 <p>有点像这样：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Employee</span> <span class="keyword">extends</span> <span class="title">Person</span> </span>&#123;</div><div class="line">    <span class="keyword">protected</span> <span class="keyword">int</span> employeeNumber;</div><div class="line">    <span class="keyword">protected</span> String workPhoneNumber;</div><div class="line">	</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Employee</span><span class="params">(String aName, String aPhoneNumber, String anAddress, <span class="keyword">int</span> aNumber, String aWorkPhoneNumber)</span></span>&#123;</div><div class="line">        <span class="comment">//显式调用父类构造方法Person(String, String, String)</span></div><div class="line">        <span class="keyword">super</span>(aName, aPhoneNumber, anAddress);</div><div class="line">        employeeNumber = aNumber;</div><div class="line">        workPhoneNumber = aWorkPhoneNumber;</div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Employee</span><span class="params">(<span class="keyword">int</span> aNumber, String aWorkPhoneNumber)</span></span>&#123;</div><div class="line">        <span class="comment">//隐含调用父类构造方法Person() &#123; this("", "", ""); &#125;</span></div><div class="line">        employeeNumber = aNumber;</div><div class="line">        workPhoneNumber = aWorkPhoneNumber;</div><div class="line">        <span class="comment">//或使用"this("", "", "", aNumber, aWorkPhoneNumber);"替代以上两句</span></div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Employee</span><span class="params">()</span></span>&#123;</div><div class="line">        <span class="comment">//隐含调用父类构造方法Person()</span></div><div class="line">        <span class="keyword">this</span>(<span class="number">0</span>, <span class="string">""</span>); <span class="comment">// 看见没！</span></div><div class="line">    &#125;</div><div class="line">&#125; <span class="comment">// 有点跑题了o.O</span></div></pre></td></tr></table></figure>
 </li>
-<li><p><strong>复制构造函数</strong>是以本类已存在的对象的引用为形参，初始化同类型的新对象的构造函数。若程序中没有声明复制构造函数，则编译器会<strong>自动生成</strong>一个隐含的复制构造函数（如不希望编译器自作多情，在C++98里可以将复制构造函数声明为 private 并且不提供函数实现；在C++11里，用<code>=delete</code>指示编译器不生成默认的复制构造函数）</p>
-<p>在以下三种情况下，复制构造函数会被调用：</p>
+<li><p><strong>复制构造函数</strong>是以本类已存在的对象的引用为形参，初始化同类型的新对象的构造函数。若程序中没有声明复制构造函数，则编译器会<strong>自动生成</strong>一个隐含的复制构造函数（如不希望编译器自作多情，在C++98里可以将复制构造函数声明为 private 并且不提供函数实现；在C++11里，用<code>=delete</code>指示编译器不生成默认的复制构造函数）<br>在以下三种情况下，复制构造函数会被调用：</p>
 <ul>
 <li>定义一个对象时，用本类另一个对象作为初始值；</li>
 <li>若函数形参是类的对象，调用函数时，将使用实参对象初始化形参对象；</li>
 <li>如果函数的返回值是类的对象，函数执行完成返回主调函数时，将使用 return 语句中的对象初始化一个临时无名对象，传递给主调函数，此时发生复制构造。（这种情况也可以通过移动构造避免不必要的复制）</li>
 </ul>
 </li>
-<li><p><strong>移动构造函数</strong>：<code>class_name(class_name &amp;&amp;)</code></p>
-<p>&amp;&amp; 是右值引用；函数返回的临时变量是右值。</p>
-</li>
+<li><strong>移动构造函数</strong>：<code>class_name(class_name &amp;&amp;)</code><br>&amp;&amp; 是右值引用；函数返回的临时变量是右值。</li>
 </ul>
 </li>
-<li><p>析构函数</p>
-<p>是在对象的生存期结束的时刻由系统自动调用的，先完成对象被删除前的一些清理工作，然后再释放此对象所属的空间。如果程序中未声明析构函数，编译器将<strong>自动产生</strong>一个默认的析构函数，其函数体为空。析构函数<strong>不接受任何参数</strong>。</p>
-</li>
+<li>析构函数<br>是在对象的生存期结束的时刻由系统自动调用的，先完成对象被删除前的一些清理工作，然后再释放此对象所属的空间。如果程序中未声明析构函数，编译器将<strong>自动产生</strong>一个默认的析构函数，其函数体为空。析构函数<strong>不接受任何参数</strong>。</li>
 </ul>
 <h3 id="类的组合"><a href="#类的组合" class="headerlink" title="类的组合"></a>类的组合</h3><ul>
 <li>构造组合类对象时的初始化次序：<ul>
@@ -806,27 +732,15 @@
 <h3 id="前向引用声明"><a href="#前向引用声明" class="headerlink" title="前向引用声明"></a>前向引用声明</h3><p>像这样：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">class</span> B; <span class="comment">// 前向引用声明</span></div><div class="line"><span class="keyword">class</span> A &#123;</div><div class="line"><span class="keyword">public</span>:</div><div class="line">	<span class="function"><span class="keyword">void</span> <span class="title">f</span><span class="params">(B b)</span></span>;</div><div class="line">&#125;;</div><div class="line"><span class="keyword">class</span> B&#123;</div><div class="line"><span class="keyword">public</span>：</div><div class="line">	<span class="function"><span class="keyword">void</span> <span class="title">g</span><span class="params">(A a)</span></span>;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
 <p>但是，在提供一个完整的类声明之前，不能声明该类的对象，也不能在内联成员函数中使用该类的对象。当使用前向引用声明时，只能使用被声明的符号，而不能涉及类的任何细节。具体见教材P121~122。</p>
-<h3 id="结构体和联合体"><a href="#结构体和联合体" class="headerlink" title="结构体和联合体"></a>结构体和联合体</h3><p>如果一个结构体全部数据成员都是公有的，并且没有用户自定义的构造函数，没有基类和虚函数，这个结构体的变量可以这么赋值：</p>
-<p><code>STRUCT_NAME myStruct = { data_member_1_val, data_member_2_val, ...}</code></p>
-<p>关于联合体，见教材P130~133（尤其是例4-8）。</p>
+<h3 id="结构体和联合体"><a href="#结构体和联合体" class="headerlink" title="结构体和联合体"></a>结构体和联合体</h3><p>如果一个结构体全部数据成员都是公有的，并且没有用户自定义的构造函数，没有基类和虚函数，这个结构体的变量可以这么赋值：<br><code>STRUCT_NAME myStruct = { data_member_1_val, data_member_2_val, ...}</code><br>关于联合体，见教材P130~133（尤其是例4-8）。</p>
 <h3 id="枚举类"><a href="#枚举类" class="headerlink" title="枚举类"></a>枚举类</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// enum class enumeration_identifier [:underlying_type] &#123; enumerator_list &#125;;</span></div><div class="line"><span class="comment">// e.g.</span></div><div class="line"><span class="keyword">enum</span> <span class="keyword">class</span> Side &#123; Right, Left &#125;;</div><div class="line">Side s = Side::Right;</div></pre></td></tr></table></figure>
 <hr>
 <h3 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h3><ul>
-<li><p>函数原型作用域</p>
-<p>函数<strong>原型</strong>（不是函数定义？）中的参数，作用域为 ‘(‘ 到 ‘)’ 之间。</p>
-</li>
-<li><p>局部作用域</p>
-<p>函数的形参、在块中声明的标识符；其作用域<strong>自声明处起</strong>，限于块中。具有局部作用域的变量也称为局部变量。</p>
-</li>
-<li><p>类作用域</p>
-<p>类的成员具有类作用域，其范围包括类体和非内联成员函数的函数体。<br>如果在类作用域以外访问类的成员，要通过类名（访问静态成员），或者该类的对<br>象名、对象引用、对象指针（访问非静态成员）。</p>
-</li>
-<li><p>文件作用域</p>
-<p>不在前述各个作用域中出现的声明，就具有文件作用域，这样声明的标识符其作用<br>域<strong>开始于声明点</strong>，结束于文件尾。</p>
-</li>
-<li><p><del>命名空间作用域（？）</del></p>
-<p><del>具有命名空间作用域的变量也称为全局变量。</del></p>
-</li>
+<li>函数原型作用域<br>函数<strong>原型</strong>（不是函数定义？）中的参数，作用域为 ‘(‘ 到 ‘)’ 之间。</li>
+<li>局部作用域<br>函数的形参、在块中声明的标识符；其作用域<strong>自声明处起</strong>，限于块中。具有局部作用域的变量也称为局部变量。</li>
+<li>类作用域<br>类的成员具有类作用域，其范围包括类体和非内联成员函数的函数体。<br>如果在类作用域以外访问类的成员，要通过类名（访问静态成员），或者该类的对<br>象名、对象引用、对象指针（访问非静态成员）。</li>
+<li>文件作用域<br>不在前述各个作用域中出现的声明，就具有文件作用域，这样声明的标识符其作用<br>域<strong>开始于声明点</strong>，结束于文件尾。</li>
+<li><del>命名空间作用域（？）</del><br><del>具有命名空间作用域的变量也称为全局变量。</del></li>
 </ul>
 <h3 id="可见性"><a href="#可见性" class="headerlink" title="可见性"></a>可见性</h3><ul>
 <li>如果某个标识符在外层中声明，且在内层中没有同一标识符的声明，则该标识符在内层可见。</li>
@@ -835,33 +749,28 @@
 <h3 id="生存期"><a href="#生存期" class="headerlink" title="生存期"></a>生存期</h3><ul>
 <li><p>静态生存期</p>
 <ul>
-<li><p>如果对象的生存期与程序的运行期相同，则称它具有静态生存期。</p>
-</li>
-<li><p>在文件作用域中声明的对象具有这种生存期。</p>
-</li>
+<li>如果对象的生存期与程序的运行期相同，则称它具有静态生存期。</li>
+<li>在文件作用域中声明的对象具有这种生存期。</li>
 <li><p>在函数内部声明静态生存期对象，要冠以关键字 static。如</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">f</span><span class="params">()</span> </span>&#123; <span class="keyword">static</span> <span class="keyword">int</span> a = <span class="number">1</span>; <span class="keyword">int</span> b = <span class="number">2</span>; ... &#125; <span class="comment">// f也可能是main</span></div></pre></td></tr></table></figure>
 <p>其中 a 具有<strong>全局寿命，局部可见</strong>，且只有在程序<strong>第一次</strong>进入函数时被初始化。</p>
 </li>
 </ul>
 </li>
-<li><p>动态生存期</p>
-<ul>
+<li>动态生存期<ul>
 <li>块作用域中声明的，没有用static修饰的对象是动态生存期的对象（习惯称局部生存期对象）。</li>
 <li>开始于程序执行到<strong>声明点</strong>时，结束于命名该标识符的作用域结束处。</li>
 <li>上例中的 b 是局部变量，具有动态生存期，每次进入函数时都会被初始化。</li>
 </ul>
 </li>
-<li><p>定义时未指定初值的基本类型静态生存期变量，会被赋予0值初始化；对于动态生存期变量，不指定初值则初值不确定。</p>
-</li>
+<li>定义时未指定初值的基本类型静态生存期变量，会被赋予0值初始化；对于动态生存期变量，不指定初值则初值不确定。</li>
 </ul>
 <h3 id="类的静态成员"><a href="#类的静态成员" class="headerlink" title="类的静态成员"></a>类的静态成员</h3><ul>
 <li>静态数据成员 (static) ：在类内声明，但必须在<strong>类外</strong>定义和初始化（使用类名限定）。</li>
 <li>静态函数成员 (static) ：主要用于处理该类的静态数据成员，可以直接访问该类的静态数据和静态函数成员；若要访问非静态成员，要通过<strong>对象名</strong>（类名也不行）来访问。</li>
 </ul>
 <h3 id="类的友元"><a href="#类的友元" class="headerlink" title="类的友元"></a>类的友元</h3><ul>
-<li><p>友元函数：</p>
-<ul>
+<li>友元函数：<ul>
 <li>友元函数是在类声明中由关键字 friend 修饰说明的非成员函数，在它的函数体中能够通过对象名访问 private 和 protected成员。</li>
 <li>作用：增加灵活性，使程序员可以在封装和快速性方面做合理选择。</li>
 <li>访问对象中的成员必须通过对象名。调用时和普通的类外函数一样。</li>
@@ -869,8 +778,7 @@
 </li>
 <li><p>友元类：</p>
 <ul>
-<li><p>若一个类 A 为另一个类 B 的友元类，则类 A 的所有成员都能访问类 B 的私有和保护成员，类 A 的所有成员函数都是 B 类的友元函数。</p>
-</li>
+<li>若一个类 A 为另一个类 B 的友元类，则类 A 的所有成员都能访问类 B 的私有和保护成员，类 A 的所有成员函数都是 B 类的友元函数。</li>
 <li><p>声明语法：将友元类名在另一个类中使用friend修饰说明。如：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">class</span> B &#123;</div><div class="line">	<span class="keyword">friend</span> <span class="keyword">class</span> A;</div><div class="line">	...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
@@ -878,26 +786,14 @@
 </li>
 </ul>
 <h3 id="const"><a href="#const" class="headerlink" title="const"></a>const</h3><ul>
-<li><p>常对象：<code>const 类名 对象名;</code> or <code>类名 const 对象名;</code></p>
-<p>用 const 进行修饰的对象，必须进行初始化，不能被更新：</p>
-</li>
-<li><p>常成员：</p>
-<p>用 const 进行修饰的类成员，分为常数据成员和常函数成员。</p>
-<ul>
-<li><p>常成员函数：<code>类型说明符 函数名(参数表) const;</code></p>
-<p>不更新对象的数据成员。因为 const 是函数类型的一个组成部分，在函数实现时也要带 const: <code>类型说明符 函数名(参数表) const { ... }</code>。也正是因此，const 关键字可以被用于参与对重载函数的区分。</p>
-<p>通过常对象只能调用它的常成员函数。</p>
-</li>
-<li><p>常数据成员：</p>
-<p>如果在一个类中说明了常数据成员，那么任何函数都不能对该成员赋值。构造函数对该数据成员进行初始化，只能通过初始化列表。可见教程P165~166例5-8. </p>
-</li>
+<li>常对象：<code>const 类名 对象名;</code> or <code>类名 const 对象名;</code><br>用 const 进行修饰的对象，必须进行初始化，不能被更新：</li>
+<li>常成员：<br>用 const 进行修饰的类成员，分为常数据成员和常函数成员。<ul>
+<li>常成员函数：<code>类型说明符 函数名(参数表) const;</code><br>不更新对象的数据成员。因为 const 是函数类型的一个组成部分，在函数实现时也要带 const: <code>类型说明符 函数名(参数表) const { ... }</code>。也正是因此，const 关键字可以被用于参与对重载函数的区分。<br>通过常对象只能调用它的常成员函数。</li>
+<li>常数据成员：<br>如果在一个类中说明了常数据成员，那么任何函数都不能对该成员赋值。构造函数对该数据成员进行初始化，只能通过初始化列表。可见教程P165~166例5-8. </li>
 </ul>
 </li>
-<li><p>常引用：<code>const 类型说明符&amp; 引用名</code></p>
-<p>被引用的对象不能被更新；如果用常引用做形参，便不会意外地发生对实参的更改。</p>
-</li>
-<li><p>常数组：数组元素不能被更新（详见第6章）：<code>类型说明符 const 数组名[大小]...</code></p>
-</li>
+<li>常引用：<code>const 类型说明符&amp; 引用名</code><br>被引用的对象不能被更新；如果用常引用做形参，便不会意外地发生对实参的更改。</li>
+<li>常数组：数组元素不能被更新（详见第6章）：<code>类型说明符 const 数组名[大小]...</code></li>
 <li><p>常指针（指向常量的指针）：不能通过指向常量的指针改变所指对象的值，但指针本身可以改变，可以指向另外的对象。如：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> a;</div><div class="line"><span class="keyword">const</span> <span class="keyword">int</span> *p1 = &amp;a; <span class="comment">//p1是指向常量的指针</span></div><div class="line"><span class="keyword">int</span> b;</div><div class="line">p1 = &amp;b; <span class="comment">//正确，p1本身的值可以改变</span></div><div class="line">*p1 = <span class="number">1</span>; <span class="comment">//编译时出错，不能通过p1改变所指的对象</span></div><div class="line">b = <span class="number">2</span>; <span class="comment">// *p1 == 2 ?</span></div></pre></td></tr></table></figure>
 </li>
@@ -921,24 +817,13 @@
 </ul>
 <hr>
 <h3 id="数组和指针"><a href="#数组和指针" class="headerlink" title="数组和指针"></a>数组和指针</h3><ul>
-<li><p>指针（型）函数：<code>存储类型 数据类型 *函数名(...) { // 函数体语句 }</code></p>
-<p>若函数的返回值是指针，该函数就是指针类型的函数。</p>
-<p>不要将非静态局部地址用作函数的返回值。如：在子函数中定义局部变量后将其地址返回给主函数，就是非法地址。</p>
-<p>在子函数中通过动态内存分配 new 操作取得的内存地址返回给主函数是合法有效<br>的，但是内存分配和释放不在同一级别，要注意不能忘记释放，避免内存泄漏。</p>
-</li>
-<li><p>指向函数的指针（函数指针）：<code>存储类型 数据类型 (*函数指针名)(...) { // 函数体 };</code><br>函数指针指向的是程序代码存储区。</p>
-</li>
-<li><p>动态内存分配：</p>
-<ul>
-<li><p><code>new 类型名T(初始化参数列表)</code>：</p>
-<p>在程序执行期间，申请用于存放T类型对象的内存空间，并依初值列表赋以<br>初值。不给出初始化参数列表时，会调用默认构造函数。<br>结果值：成功：T类型的指针，指向新分配的内存；失败：抛出异常。</p>
-</li>
-<li><p><code>delete 指针p</code>：p 必须是由 new 生成的。</p>
-</li>
-<li><p><code>new 类型名T [ 数组长度 ]</code></p>
-</li>
-<li><p><code>delete[] 数组名p</code>：p 必须是用new分配得到的数组首地址。</p>
-</li>
+<li>指针（型）函数：<code>存储类型 数据类型 *函数名(...) { // 函数体语句 }</code><br>若函数的返回值是指针，该函数就是指针类型的函数。<br>不要将非静态局部地址用作函数的返回值。如：在子函数中定义局部变量后将其地址返回给主函数，就是非法地址。<br>在子函数中通过动态内存分配 new 操作取得的内存地址返回给主函数是合法有效<br>的，但是内存分配和释放不在同一级别，要注意不能忘记释放，避免内存泄漏。</li>
+<li>指向函数的指针（函数指针）：<code>存储类型 数据类型 (*函数指针名)(...) { // 函数体 };</code><br>函数指针指向的是程序代码存储区。</li>
+<li>动态内存分配：<ul>
+<li><code>new 类型名T(初始化参数列表)</code>：<br>在程序执行期间，申请用于存放T类型对象的内存空间，并依初值列表赋以<br>初值。不给出初始化参数列表时，会调用默认构造函数。<br>结果值：成功：T类型的指针，指向新分配的内存；失败：抛出异常。</li>
+<li><code>delete 指针p</code>：p 必须是由 new 生成的。</li>
+<li><code>new 类型名T [ 数组长度 ]</code></li>
+<li><code>delete[] 数组名p</code>：p 必须是用new分配得到的数组首地址。</li>
 </ul>
 </li>
 </ul>
@@ -950,8 +835,7 @@
 <h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><h4 id="rand"><a href="#rand" class="headerlink" title="rand()"></a>rand()</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// #include &lt;stdlib.h&gt;</span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">rand</span><span class="params">(<span class="keyword">void</span>)</span> <span class="comment">// returns a pseudorandom integer in the range 0 to RAND_MAX (32767).</span></span></div></pre></td></tr></table></figure>
 <h4 id="srand"><a href="#srand" class="headerlink" title="srand()"></a>srand()</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// #include &lt;stdlib.h&gt;</span></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">srand</span><span class="params">(<span class="keyword">unsigned</span> <span class="keyword">int</span> seed)</span></span>;</div><div class="line"><span class="comment">// we can use: srand((unsigned)time(NULL));</span></div></pre></td></tr></table></figure>
 <h4 id="time"><a href="#time" class="headerlink" title="time()"></a>time()</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// C: #include &lt;time.h&gt;</span></div><div class="line"><span class="comment">// C++: #include &lt;ctime&gt; or &lt;time.h&gt;</span></div><div class="line"><span class="comment">/*</span></div><div class="line"> * Return the time as seconds elapsed since midnight, January 1, 1970, </div><div class="line"> * or -1 in the case of an error.</div><div class="line"> *</div><div class="line"> * timer: The return value is stored in the location given by timer. </div><div class="line"> * timer may be NULL, in which case the return value is not stored.</div><div class="line"> */</div><div class="line"><span class="keyword">time_t</span> time(<span class="keyword">time_t</span> *timer);</div></pre></td></tr></table></figure>
-<h4 id="函数的可变参数-initializer-list"><a href="#函数的可变参数-initializer-list" class="headerlink" title="函数的可变参数: initializer_list"></a>函数的可变参数: initializer_list<t></t></h4><p>initializer_list<t>: 是一种标准库类型，用于表示某种特定类型的值的数组。其对象中的元素永远是常量值，我们无法改变其对象中元素的值。Copying an <strong>initializer_list</strong> creates a second instance of a list pointing to the same objects; the underlying objects are not copied. （浅复制）</t></p>
-<p>例如：</p>
+<h4 id="函数的可变参数-initializer-list"><a href="#函数的可变参数-initializer-list" class="headerlink" title="函数的可变参数: initializer_list"></a>函数的可变参数: initializer_list<t></t></h4><p>initializer_list<t>: 是一种标准库类型，用于表示某种特定类型的值的数组。其对象中的元素永远是常量值，我们无法改变其对象中元素的值。Copying an <strong>initializer_list</strong> creates a second instance of a list pointing to the same objects; the underlying objects are not copied. （浅复制）<br>例如：</t></p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;initializer_list&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line">    <span class="comment">// Create an empty initializer_list c0</span></div><div class="line">    <span class="built_in">initializer_list</span> &lt;<span class="keyword">int</span>&gt; c0;</div><div class="line"></div><div class="line">    <span class="comment">// Create an initializer_list c1 with 1 element</span></div><div class="line">    <span class="built_in">initializer_list</span> &lt;<span class="keyword">int</span>&gt; c1&#123; <span class="number">3</span> &#125;;</div><div class="line"></div><div class="line">    <span class="comment">// Create an initializer_list c2 with 5 elements </span></div><div class="line">    <span class="built_in">initializer_list</span> &lt;<span class="keyword">int</span>&gt; c2&#123; <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span> &#125;;</div><div class="line"></div><div class="line">    <span class="comment">// Create a copy, initializer_list c3, of initializer_list c2</span></div><div class="line">    <span class="built_in">initializer_list</span> &lt;<span class="keyword">int</span>&gt; c3(c2);</div><div class="line"></div><div class="line">    <span class="comment">// Create a initializer_list c4 by copying the range c3[_First, _Last)</span></div><div class="line">    <span class="keyword">const</span> <span class="keyword">int</span>* c3_ptr = c3.begin();</div><div class="line">    c3_ptr++;</div><div class="line">    c3_ptr++;</div><div class="line">    <span class="built_in">initializer_list</span> &lt;<span class="keyword">int</span>&gt; c4(c3.begin(), c3_ptr);</div><div class="line"></div><div class="line">    <span class="comment">// Move initializer_list c4 to initializer_list c5</span></div><div class="line">    <span class="built_in">initializer_list</span> &lt;<span class="keyword">int</span>&gt; c5(move(c4)); <span class="comment">// move ???</span></div><div class="line"></div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"c1 ="</span>;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span> c : c1)</div><div class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">" "</span> &lt;&lt; c;</div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>; <span class="comment">// c1 = 3</span></div><div class="line"></div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"c2 ="</span>;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span> c : c2)</div><div class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">" "</span> &lt;&lt; c;</div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>; <span class="comment">// c2 = 5 4 3 2 1</span></div><div class="line"></div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"c3 ="</span>;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span> c : c3)</div><div class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">" "</span> &lt;&lt; c;</div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>; <span class="comment">// c3 = 5 4 3 2 1</span></div><div class="line"></div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"c4 ="</span>;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span> c : c4)</div><div class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">" "</span> &lt;&lt; c;</div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>; <span class="comment">// c4 = 5 4</span></div><div class="line"></div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"c5 ="</span>;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span> c : c5)</div><div class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">" "</span> &lt;&lt; c;</div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>; <span class="comment">// c5 = 5 4</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h4 id="getline"><a href="#getline" class="headerlink" title="getline()"></a>getline()</h4><p>需要string. </p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">string</span> s;</div><div class="line">getline(<span class="built_in">cin</span>, s); <span class="comment">// 输入整行字符串;</span></div><div class="line">getline(<span class="built_in">cin</span>, s, <span class="string">','</span>); <span class="comment">// 使用其它分隔符(',')作为字符串结束的标志.</span></div></pre></td></tr></table></figure>
@@ -1047,7 +931,7 @@
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
+               src="/images/cpp_pacman.png"
                alt="Psrit.Xenon" />
           <p class="site-author-name" itemprop="name">Psrit.Xenon</p>
           <p class="site-description motion-element" itemprop="description">黄梅时节家家雨，青草池塘处处蛙。</p>
