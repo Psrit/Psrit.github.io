@@ -85,8 +85,7 @@
 
 
 <meta name="description" content="程序
-源程序：
-用源语言写的，有待翻译的程序；
+源程序：用源语言写的，有待翻译的程序；
 
 目标程序；源程序通过翻译程序加工以后生成的机器语言程序；
 
@@ -104,8 +103,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/11/04/cpp-review/index.html">
 <meta property="og:site_name" content="Psrit's Blog">
 <meta property="og:description" content="程序
-源程序：
-用源语言写的，有待翻译的程序；
+源程序：用源语言写的，有待翻译的程序；
 
 目标程序；源程序通过翻译程序加工以后生成的机器语言程序；
 
@@ -120,12 +118,11 @@
 进制转换">
 <meta property="og:image" content="https://worldvectorlogo.com/logos/python-5.svg">
 <meta property="og:image" content="https://worldvectorlogo.com/logos/java-14.svg">
-<meta property="og:updated_time" content="2016-11-05T03:34:37.339Z">
+<meta property="og:updated_time" content="2016-11-05T13:19:06.413Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++总结">
 <meta name="twitter:description" content="程序
-源程序：
-用源语言写的，有待翻译的程序；
+源程序：用源语言写的，有待翻译的程序；
 
 目标程序；源程序通过翻译程序加工以后生成的机器语言程序；
 
@@ -326,8 +323,7 @@
       
         <hr>
 <h3 id="程序"><a href="#程序" class="headerlink" title="程序"></a>程序</h3><ul>
-<li><p>源程序：</p>
-<p>用源语言写的，有待翻译的程序；</p>
+<li><p>源程序：用源语言写的，有待翻译的程序；</p>
 </li>
 <li><p>目标程序；源程序通过翻译程序加工以后生成的机器语言程序；</p>
 </li>
@@ -342,8 +338,8 @@
 <h3 id="进制转换"><a href="#进制转换" class="headerlink" title="进制转换"></a>进制转换</h3><ul>
 <li>$R$进制到十进制：</li>
 </ul>
-<p>$$<br>(b<em>k b</em>{k - 1} \cdots b<em>0 . b</em>{-1} \cdots b<em>{-n})R = \sum</em>{i = -n}^k b_i R^i<br>$$</p>
-<p>如 $(11111111.11)<em>2=1×2^7+1×2^6+1×2^5+1×2^4\+1×2^3+1×2^2+1×2^1+1×2^0+1×2^{-1}+1×2^{-2} =(255.75)</em>{10}$</p>
+<p>$$<br>(b_k b_{k - 1} \cdots b_0 . b_{-1} \cdots b_{-n})R = \sum_{i = -n}^k b_i R^i<br>$$</p>
+<p>如 $(11111111.11)_2=1×2^7+1×2^6+1×2^5+1×2^4\\+1×2^3+1×2^2+1×2^1+1×2^0+1×2^{-1}+1×2^{-2} =(255.75)_{10}$</p>
 <ul>
 <li><p>十进制到$R$进制：</p>
 <ul>
@@ -351,12 +347,7 @@
 <p>除以$R$取余</p>
 </li>
 <li><p>小数：</p>
-<p>乘以$R​$取整：<br>$$<br>\left.\begin{alignedat}{2}</p>
-<ol>
-<li>&amp; 3125 &amp;&amp; \times 2 = {\color{red} 0}.625 \</li>
-<li>&amp; 625   &amp;&amp; \times 2 = {\color{red} 1}.25 \<br>{\color{blue}0}. &amp; 25     &amp;&amp; \times 2 = {\color{red} 0}.5 \</li>
-<li>&amp; 5       &amp;&amp; \times 2 = {\color{red} 1}.0 \<br>\end{alignedat}\right}<br>\Rightarrow 0.3125<em>{10} = 0.0101</em>{2}<br>$$</li>
-</ol>
+<p>乘以$R​$取整：<br>$$<br>\left.\begin{alignedat}{2}<br>0. &amp; 3125 &amp;&amp; \times 2 = {\color{red} 0}.625 \\<br>0. &amp; 625   &amp;&amp; \times 2 = {\color{red} 1}.25 \\<br>{\color{blue}0}. &amp; 25     &amp;&amp; \times 2 = {\color{red} 0}.5 \\<br>0. &amp; 5       &amp;&amp; \times 2 = {\color{red} 1}.0 \\<br>\end{alignedat}\right\}<br>\Rightarrow 0.3125_{10} = 0.0101_{2}<br>$$</p>
 </li>
 </ul>
 </li>
@@ -365,7 +356,7 @@
 <li>1 位八进制数相当于3 位二进制数；</li>
 <li>1 位十六进制数相当于4 位二进制数。如：</li>
 </ul>
-<p>$$<br>\mathrm{<br>(1011010.10)_2 = (\underline{001}\ \underline{011}\ \underline{010} . \underline{100})_2 = (132.4)_8 \<br>(1011010.10)_2 = (\underline{0101}\ \underline{1010} . \underline{1000})<em>2 = (5A.8)</em>{16} \<br>(F7)_{16} = (\underline{1111}\ \underline{0111})_2 = (11110111)_2<br>}<br>$$</p>
+<p>$$<br>\mathrm{<br>(1011010.10)_2 = (\underline{001}\ \underline{011}\ \underline{010} . \underline{100})_2 = (132.4)_8 \\<br>(1011010.10)_2 = (\underline{0101}\ \underline{1010} . \underline{1000})_2 = (5A.8)_{16} \\<br>(F7)_{16} = (\underline{1111}\ \underline{0111})_2 = (11110111)_2<br>}<br>$$</p>
 </li>
 </ul>
 <h3 id="二进制数的编码"><a href="#二进制数的编码" class="headerlink" title="二进制数的编码"></a>二进制数的编码</h3><ul>
@@ -379,7 +370,7 @@
 <ul>
 <li><p>正数的反码与原码表示相同；</p>
 </li>
-<li><p>负数的反码与原码有如下关系：<br>符号位不变(仍用1 表示)，其余各位取反(0 变1，1 变0)，例如：<br>$$<br>\begin{alignedat}{2}<br>X &amp;= &amp; \ -&amp;\ 1100110 \<br>[X]<em>原 &amp; = &amp; 1&amp;\ 1100110 \<br>[X]</em>反 &amp; = &amp; 1&amp;\ 0011001<br>\end{alignedat}<br>$$</p>
+<li><p>负数的反码与原码有如下关系：<br>符号位不变(仍用1 表示)，其余各位取反(0 变1，1 变0)，例如：<br>$$<br>\begin{alignedat}{2}<br>X &amp;= &amp; \ -&amp;\ 1100110 \\<br>[X]_原 &amp; = &amp; 1&amp;\ 1100110 \\<br>[X]_反 &amp; = &amp; 1&amp;\ 0011001<br>\end{alignedat}<br>$$</p>
 </li>
 </ul>
 </li>
@@ -417,9 +408,84 @@
 </ul>
 </li>
 <li><p>各基本类型的取值范围</p>
-<p>|        类型名         | 长度（字节） |                   取值范围                   |<br>| :—————-: | :—-: | :————————————–: |<br>|        bool        |   1    |               false, true                |<br>|        char        |   1    |                -128 ~ 127                |<br>|    signed char     |   1    |                -128 ~ 127                |<br>|   unsigned char    |   1    |                 0 ~ 255                  |<br>|   (signed) short   |   2    |              -32768 ~ 32767              |<br>|   unsigned short   |   2    |                0 ~ 65535                 |<br>| (signed) int/long  |   4    |           -2 ^ 31 ~ 2 ^ 31 - 1           |<br>| unsigned int/long  |   4    |              0 ~ 2 ^ 32 - 1              |<br>|     long long      |   8    |           -2 ^ 63 ~ 2 ^ 63 - 1           |<br>| unsigned long long |   8    |              0 ~ 2 ^ 64 - 1              |<br>|       float        |   4    | (绝对值范围, 下同) 3.4 × 10 ^ (-38) ~ 3.4 × 10 ^ 38 |<br>|       double       |   8    |    1.7 × 10 ^ (-308) ~ 1.7 × 10 ^ 308    |<br>|    long double     |   8    |    1.7 × 10 ^ (-308) ~ 1.7 × 10 ^ 308    |</p>
 </li>
 </ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">类型名</th>
+<th style="text-align:center">长度（字节）</th>
+<th style="text-align:center">取值范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">bool</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">false, true</td>
+</tr>
+<tr>
+<td style="text-align:center">char</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">-128 ~ 127</td>
+</tr>
+<tr>
+<td style="text-align:center">signed char</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">-128 ~ 127</td>
+</tr>
+<tr>
+<td style="text-align:center">unsigned char</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0 ~ 255</td>
+</tr>
+<tr>
+<td style="text-align:center">(signed) short</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">-32768 ~ 32767</td>
+</tr>
+<tr>
+<td style="text-align:center">unsigned short</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">0 ~ 65535</td>
+</tr>
+<tr>
+<td style="text-align:center">(signed) int/long</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">-2 ^ 31 ~ 2 ^ 31 - 1</td>
+</tr>
+<tr>
+<td style="text-align:center">unsigned int/long</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">0 ~ 2 ^ 32 - 1</td>
+</tr>
+<tr>
+<td style="text-align:center">long long</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">-2 ^ 63 ~ 2 ^ 63 - 1</td>
+</tr>
+<tr>
+<td style="text-align:center">unsigned long long</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">0 ~ 2 ^ 64 - 1</td>
+</tr>
+<tr>
+<td style="text-align:center">float</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">(绝对值范围, 下同) 3.4 × 10 ^ (-38) ~ 3.4 × 10 ^ 38</td>
+</tr>
+<tr>
+<td style="text-align:center">double</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">1.7 × 10 ^ (-308) ~ 1.7 × 10 ^ 308</td>
+</tr>
+<tr>
+<td style="text-align:center">long double</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">1.7 × 10 ^ (-308) ~ 1.7 × 10 ^ 308</td>
+</tr>
+</tbody>
+</table>
 <p>注：以上针对32位处理器。64位机器中long == long long，其他类型没有考证过。</p>
 <h3 id="C-常量"><a href="#C-常量" class="headerlink" title="C++常量"></a>C++常量</h3><ul>
 <li><p>整数常量：如12，010，0xfff</p>
@@ -431,7 +497,7 @@
 <li><p>浮点常量：如12.5，-12.5，0.345E+2，-34.4E-3</p>
 <ul>
 <li>指数形式下，整数和小数部分可省略其一</li>
-<li>默认是double型。添加后缀F (f)可使其成为float型，如12.3f</li>
+<li>默认是double型。添加后缀 F (f) 可使其成为float型，如12.3f</li>
 </ul>
 </li>
 <li><p>字符和字符串：</p>
@@ -441,11 +507,41 @@
 <li><p>字符串常量：”CHINA”。每个字符一个字节，别忘了末尾有’\0’。</p>
 </li>
 <li><p>可以添加前缀以改变字符（串）常量的类型：</p>
-<p>| 前缀   | 含义                  | 类型       |<br>| —- | :—————— | ——– |<br>| u    | Unicode 16字符        | char16_t |<br>| U    | Unicode 32字符        | char32_t |<br>| L    | 宽字符(What’s that???) | wchar_t  |<br>| u8   | UTF-8 (仅用于字符串字面常量)  | char     |</p>
 </li>
 </ul>
 </li>
 </ul>
+<table>
+<thead>
+<tr>
+<th>前缀</th>
+<th style="text-align:left">含义</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>u</td>
+<td style="text-align:left">Unicode 16字符</td>
+<td>char16_t</td>
+</tr>
+<tr>
+<td>U</td>
+<td style="text-align:left">Unicode 32字符</td>
+<td>char32_t</td>
+</tr>
+<tr>
+<td>L</td>
+<td style="text-align:left">宽字符(What’s that???)</td>
+<td>wchar_t</td>
+</tr>
+<tr>
+<td>u8</td>
+<td style="text-align:left">UTF-8 (仅用于字符串字面常量)</td>
+<td>char</td>
+</tr>
+</tbody>
+</table>
 <h3 id="C-变量"><a href="#C-变量" class="headerlink" title="C++变量"></a>C++变量</h3><ul>
 <li><p>定义：<code>TYPE var1, var2, ... varn;</code>。<strong>变量的定义就是在给变量命名的时候分配内存空间。</strong></p>
 </li>
@@ -536,22 +632,22 @@
 </tbody>
 </table>
 <p>例如：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">( )</span> </span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line">    <span class="keyword">float</span> i = <span class="number">1.1F</span>, pi = <span class="number">3.1415</span>;</div><div class="line">	<span class="built_in">cout</span> &lt;&lt; setw(<span class="number">5</span>) &lt;&lt; setprecision(<span class="number">3</span>) &lt;&lt; pi &lt;&lt; <span class="built_in">endl</span>; <span class="comment">// print: _3.14 ?</span></div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="comment">/*fixed &lt;&lt;*/</span> i &lt;&lt; <span class="built_in">endl</span>;   <span class="comment">// fixed is the default // print: 1.1</span></div><div class="line">    <span class="built_in">cout</span> &lt;&lt; scientific &lt;&lt; i &lt;&lt; <span class="built_in">endl</span>; <span class="comment">// print: 1.100000e+000</span></div><div class="line">    <span class="built_in">cout</span>.precision( <span class="number">8</span> );</div><div class="line">    <span class="built_in">cout</span> &lt;&lt; fixed &lt;&lt; i &lt;&lt; <span class="built_in">endl</span>; <span class="comment">// ?</span></div><div class="line">    <span class="built_in">cout</span> &lt;&lt; scientific &lt;&lt; i &lt;&lt; <span class="built_in">endl</span>; <span class="comment">// ?</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">( )</span> </span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line">    <span class="keyword">float</span> i = <span class="number">1.1F</span>, pi = <span class="number">3.1415</span>;</div><div class="line">    <span class="built_in">cout</span> &lt;&lt; setw(<span class="number">5</span>) &lt;&lt; setprecision(<span class="number">3</span>) &lt;&lt; pi &lt;&lt; <span class="built_in">endl</span>; <span class="comment">// print: _3.14 ?</span></div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="comment">/*fixed &lt;&lt;*/</span> i &lt;&lt; <span class="built_in">endl</span>;   <span class="comment">// fixed is the default // print: 1.1</span></div><div class="line">    <span class="built_in">cout</span> &lt;&lt; scientific &lt;&lt; i &lt;&lt; <span class="built_in">endl</span>; <span class="comment">// print: 1.100000e+000</span></div><div class="line">    <span class="built_in">cout</span>.precision( <span class="number">8</span> );</div><div class="line">    <span class="built_in">cout</span> &lt;&lt; fixed &lt;&lt; i &lt;&lt; <span class="built_in">endl</span>; <span class="comment">// ?</span></div><div class="line">    <span class="built_in">cout</span> &lt;&lt; scientific &lt;&lt; i &lt;&lt; <span class="built_in">endl</span>; <span class="comment">// ?</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="基本控制结构"><a href="#基本控制结构" class="headerlink" title="基本控制结构"></a>基本控制结构</h3><ul>
 <li><p>if-else: </p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> (expr1)</div><div class="line">    statement1 </div><div class="line">[<span class="keyword">else</span> <span class="keyword">if</span> (expr2)</div><div class="line">	statement2</div><div class="line"><span class="keyword">else</span></div><div class="line">	statement3]</div></pre></td></tr></table></figure>
+  <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> (expr1)</div><div class="line">    statement1 </div><div class="line">[<span class="keyword">else</span> <span class="keyword">if</span> (expr2)</div><div class="line">    statement2</div><div class="line"><span class="keyword">else</span></div><div class="line">    statement3]</div></pre></td></tr></table></figure>
 <p>The <strong>else</strong> clause of an <strong>if…else</strong> statement is associated with the closest previous <strong>if</strong> statement in the same scope that does not have a corresponding <strong>else</strong> statement. (就进匹配原则)</p>
 </li>
 <li><p>switch-case: </p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">switch</span> (表达式)</div><div class="line">&#123; </div><div class="line"><span class="keyword">case</span> 常量表达式 <span class="number">1</span>: </div><div class="line">    语句<span class="number">1</span> <span class="comment">// Here &#123;&#125; is not needed. </span></div><div class="line"><span class="keyword">case</span> 常量表达式 <span class="number">2</span>: 语句<span class="number">2</span></div><div class="line">┆</div><div class="line"><span class="keyword">case</span> 常量表达式 n: 语句n</div><div class="line"><span class="keyword">default</span>: 语句n+<span class="number">1</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+  <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">switch</span> (表达式)</div><div class="line">&#123; </div><div class="line"><span class="keyword">case</span> 常量表达式 <span class="number">1</span>: </div><div class="line">    语句<span class="number">1</span> <span class="comment">// Here &#123;&#125; is not needed. </span></div><div class="line"><span class="keyword">case</span> 常量表达式 <span class="number">2</span>: 语句<span class="number">2</span></div><div class="line">┆</div><div class="line"><span class="keyword">case</span> 常量表达式 n: 语句n</div><div class="line"><span class="keyword">default</span>: 语句n+<span class="number">1</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 <li><p>while:</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">while</span> (expr)</div><div class="line">	statement</div></pre></td></tr></table></figure>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">do</span></span></div><div class="line">	statement</div><div class="line"><span class="title">while</span> <span class="params">(expr)</span></div></pre></td></tr></table></figure>
+  <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">while</span> (expr)</div><div class="line">    statement</div></pre></td></tr></table></figure>
+  <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">do</span></span></div><div class="line">    statement</div><div class="line"><span class="title">while</span> <span class="params">(expr)</span></div></pre></td></tr></table></figure>
 </li>
 <li><p>for: </p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (init_expression; cond_expression; loop_expression)</div><div class="line">	statement</div></pre></td></tr></table></figure>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (iterate_var : expression)</div><div class="line">	statement</div></pre></td></tr></table></figure>
+  <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (init_expression; cond_expression; loop_expression)</div><div class="line">    statement</div></pre></td></tr></table></figure>
+  <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (iterate_var : expression)</div><div class="line">    statement</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="自定义类型-typedef-using-enum-auto-decltype"><a href="#自定义类型-typedef-using-enum-auto-decltype" class="headerlink" title="自定义类型 (typedef, using, enum, auto, decltype)"></a>自定义类型 (typedef, using, enum, auto, decltype)</h3><ul>
@@ -612,8 +708,8 @@
 <h3 id="默认参数值"><a href="#默认参数值" class="headerlink" title="默认参数值"></a>默认参数值</h3><ul>
 <li><p>有默认参数的形参必须列在形参列表最右，即默认参数值右边不能有/无默认值的参数。 调用时，实参与形参从左向右依次结合。</p>
 </li>
-<li><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> x = <span class="number">5</span>, <span class="keyword">int</span> y = <span class="number">6</span>)</span></span>; <span class="comment">// 默认参数值必须在这里给出</span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">	add();</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span> </span>&#123; <span class="comment">// 这里不能再指定默认值了</span></div><div class="line">	<span class="keyword">return</span> x + y;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> x = <span class="number">5</span>, <span class="keyword">int</span> y = <span class="number">6</span>)</span> </span>&#123; <span class="comment">// 默认参数值必须在这里给出</span></div><div class="line">	<span class="keyword">return</span> x + y;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">	add();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<li><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> x = <span class="number">5</span>, <span class="keyword">int</span> y = <span class="number">6</span>)</span></span>; <span class="comment">// 默认参数值必须在这里给出</span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    add();</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span> </span>&#123; <span class="comment">// 这里不能再指定默认值了</span></div><div class="line">    <span class="keyword">return</span> x + y;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> x = <span class="number">5</span>, <span class="keyword">int</span> y = <span class="number">6</span>)</span> </span>&#123; <span class="comment">// 默认参数值必须在这里给出</span></div><div class="line">    <span class="keyword">return</span> x + y;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    add();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <hr>
@@ -621,8 +717,43 @@
 <li><p>可以为数据成员提供一个类内初始值。创建对象时，类内初始值用于初始化数据成员，没有初始值的成员将被默认初始化。</p>
 </li>
 <li><p>访问控制：</p>
-<p>| 类型        | 对象内部函数和数据            | 同类型其他对象 | 子类   | 外部函数和外部类               |<br>| ——— | ——————– | ——- | —- | ———————- |<br>| public    | 可以访问（直接使用成员名访问；本列下同） |         | 可以访问 | 可以访问（使用<code>对象名.成员名</code>的方式访问） |<br>| protected | 可以访问                 |         |      | 不可访问                   |<br>| private   | 可以访问                 |         |      | 不可访问                   |</p>
 </li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>对象内部函数和数据</th>
+<th>同类型其他对象</th>
+<th>子类</th>
+<th>外部函数和外部类</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>public</td>
+<td>可以访问（直接使用成员名访问；本列下同）</td>
+<td></td>
+<td>可以访问</td>
+<td>可以访问（使用<code>对象名.成员名</code>的方式访问）</td>
+</tr>
+<tr>
+<td>protected</td>
+<td>可以访问</td>
+<td></td>
+<td></td>
+<td>不可访问</td>
+</tr>
+<tr>
+<td>private</td>
+<td>可以访问</td>
+<td></td>
+<td></td>
+<td>不可访问</td>
+</tr>
+</tbody>
+</table>
+<ul>
 <li><p>构造函数</p>
 <ul>
 <li><p>在对象创建时被自动调用。</p>
@@ -646,7 +777,7 @@
 <li><p>所谓<strong>委托构造函数</strong>，是使用类的其他构造函数执行初始化过程的构造函数。如</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Clock(<span class="keyword">int</span> h, <span class="keyword">int</span> m, <span class="keyword">int</span> s): hour(h), minute(m), secong(s) &#123;&#125;</div><div class="line">Clock(): Clock(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>) &#123;&#125; <span class="comment">// delegate constructor</span></div></pre></td></tr></table></figure>
 <p>有点像这样：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Employee</span> <span class="keyword">extends</span> <span class="title">Person</span> </span>&#123;</div><div class="line">	<span class="keyword">protected</span> <span class="keyword">int</span> employeeNumber;</div><div class="line">	<span class="keyword">protected</span> String workPhoneNumber;</div><div class="line">	</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Employee</span><span class="params">(String aName, String aPhoneNumber, String anAddress, <span class="keyword">int</span> aNumber, String aWorkPhoneNumber)</span></span>&#123;</div><div class="line">        <span class="comment">//显式调用父类构造方法Person(String, String, String)</span></div><div class="line">        <span class="keyword">super</span>(aName, aPhoneNumber, anAddress);</div><div class="line">        employeeNumber = aNumber;</div><div class="line">        workPhoneNumber = aWorkPhoneNumber;</div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Employee</span><span class="params">(<span class="keyword">int</span> aNumber, String aWorkPhoneNumber)</span></span>&#123;</div><div class="line">        <span class="comment">//隐含调用父类构造方法Person() &#123; this("", "", ""); &#125;</span></div><div class="line">        employeeNumber = aNumber;</div><div class="line">        workPhoneNumber = aWorkPhoneNumber;</div><div class="line">        <span class="comment">//或使用"this("", "", "", aNumber, aWorkPhoneNumber);"替代以上两句</span></div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Employee</span><span class="params">()</span></span>&#123;</div><div class="line">        <span class="comment">//隐含调用父类构造方法Person()</span></div><div class="line">        <span class="keyword">this</span>(<span class="number">0</span>, <span class="string">""</span>); <span class="comment">// 看见没！</span></div><div class="line">&#125; <span class="comment">// 有点跑题了o.O</span></div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Employee</span> <span class="keyword">extends</span> <span class="title">Person</span> </span>&#123;</div><div class="line">    <span class="keyword">protected</span> <span class="keyword">int</span> employeeNumber;</div><div class="line">    <span class="keyword">protected</span> String workPhoneNumber;</div><div class="line">	</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Employee</span><span class="params">(String aName, String aPhoneNumber, String anAddress, <span class="keyword">int</span> aNumber, String aWorkPhoneNumber)</span></span>&#123;</div><div class="line">        <span class="comment">//显式调用父类构造方法Person(String, String, String)</span></div><div class="line">        <span class="keyword">super</span>(aName, aPhoneNumber, anAddress);</div><div class="line">        employeeNumber = aNumber;</div><div class="line">        workPhoneNumber = aWorkPhoneNumber;</div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Employee</span><span class="params">(<span class="keyword">int</span> aNumber, String aWorkPhoneNumber)</span></span>&#123;</div><div class="line">        <span class="comment">//隐含调用父类构造方法Person() &#123; this("", "", ""); &#125;</span></div><div class="line">        employeeNumber = aNumber;</div><div class="line">        workPhoneNumber = aWorkPhoneNumber;</div><div class="line">        <span class="comment">//或使用"this("", "", "", aNumber, aWorkPhoneNumber);"替代以上两句</span></div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Employee</span><span class="params">()</span></span>&#123;</div><div class="line">        <span class="comment">//隐含调用父类构造方法Person()</span></div><div class="line">        <span class="keyword">this</span>(<span class="number">0</span>, <span class="string">""</span>); <span class="comment">// 看见没！</span></div><div class="line">    &#125;</div><div class="line">&#125; <span class="comment">// 有点跑题了o.O</span></div></pre></td></tr></table></figure>
 </li>
 <li><p><strong>复制构造函数</strong>是以本类已存在的对象的引用为形参，初始化同类型的新对象的构造函数。若程序中没有声明复制构造函数，则编译器会<strong>自动生成</strong>一个隐含的复制构造函数（如不希望编译器自作多情，在C++98里可以将复制构造函数声明为 private 并且不提供函数实现；在C++11里，用<code>=delete</code>指示编译器不生成默认的复制构造函数）</p>
 <p>在以下三种情况下，复制构造函数会被调用：</p>
