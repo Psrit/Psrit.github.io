@@ -531,8 +531,8 @@ Side s = Side::Right;
 
     ```c++
     class B {
-    	friend class A;
-    	...
+        friend class A;
+        ...
     }
     ```
 
