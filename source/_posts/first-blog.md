@@ -60,7 +60,7 @@ Also, I found that emoji was not supported... (although which is not something m
 
 - 其他：
 
-  emoji、*列表中的*有序列表（即各项有编号的列表）在 hexo markdown 中得不到支持（其中，无论是否是在列表的子项中，有序列表在普通 MarkdownPad2 中d都是得到支持的，对于 hexo 仅支持顶级的有序列表我表示很奇怪）。
+  emoji、*列表中的*有序列表（即各项有编号的列表）在 hexo markdown 中得不到支持（其中，无论是否是在列表的子项中，有序列表在普通 MarkdownPad2 中都是得到支持的，对于 hexo 仅支持顶级的有序列表我表示很奇怪）。
 
 以上仅限于 Typora 和 hexo markdown 引擎间的区别。其他引擎间的情况就不清楚了。
 
