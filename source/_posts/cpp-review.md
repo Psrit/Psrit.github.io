@@ -428,7 +428,67 @@ int main() {
     - 若函数形参是类的对象，调用函数时，将使用实参对象初始化形参对象；
     - 如果函数的返回值是类的对象，函数执行完成返回主调函数时，将使用 return 语句中的对象初始化一个临时无名对象，传递给主调函数，此时发生复制构造。（这种情况也可以通过移动构造避免不必要的复制）
   - **移动构造函数**：`class_name(class_name &&)`
-    && 是右值引用；函数返回的临时变量是右值。
+    && 是右值引用；函数返回的临时变量是右值。简单点，可以看下面的例子：
+    ```c++
+    #include <iostream>
+    using namespace std;
+    class IntNum {
+    public:
+        IntNum(int x = 0) : xptr(new int(x)){ //构造函数
+            cout << "Calling constructor..." << endl;
+        }
+        IntNum(const IntNum & n) : xptr(new int(*n.xptr)){//复制构造函数
+            cout << "Calling copy constructor..." << endl;
+        };
+        ~IntNum(){ //析构函数
+            delete xptr;
+            cout << "Destructing..." << endl;
+        }
+        int getInt() { return *xptr; }
+    private:
+        int *xptr;
+    };
+    //返回值为IntNum类对象
+    IntNum getNum() {
+        IntNum a;
+        return a;
+    }
+
+    int main() {
+        cout<<getNum().getInt()<<endl;
+        return 0;
+    }
+    ```
+
+    这时的输出为：
+
+    ```
+    Calling constructor...
+    Calling copy constructor...
+    Destructing...
+    0
+    Destructing...
+    ```
+
+    若向 IntNum 类中加入移动构造函数：
+
+    ```c++
+    IntNum(IntNum && n): xptr(n.xptr){ // 移动构造函数，可以为那些像getNum()一样的函数，将需要返回的局部对象转移到主调函数，省去了构造和删除临时对象的过程。
+        n.xptr = nullptr; // necessary
+        cout << "Calling move constructor..." << endl;
+    }
+    ```
+
+    输出则变成：
+
+    ```
+    Calling constructor...
+    Calling move constructor...
+    Destructing...
+    0
+    Destructing...
+    ```
+
 - 析构函数
   是在对象的生存期结束的时刻由系统自动调用的，先完成对象被删除前的一些清理工作，然后再释放此对象所属的空间。如果程序中未声明析构函数，编译器将**自动产生**一个默认的析构函数，其函数体为空。析构函数**不接受任何参数**。
 
