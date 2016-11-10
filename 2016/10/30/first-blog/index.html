@@ -96,7 +96,7 @@ Also, I found that emoji was not su">
 Well, as a “little white”, I don’t know what to say… 
 Emm… I think, the font is really ugly; the theme “huno” doesn’t perform well on mobile devices. 
 Also, I found that emoji was not su">
-<meta property="og:updated_time" content="2016-11-06T02:46:08.456Z">
+<meta property="og:updated_time" content="2016-11-10T02:36:20.091Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="First Blog">
 <meta name="twitter:description" content="Hello World! 
@@ -297,11 +297,11 @@ Also, I found that emoji was not su">
 <p>作为还有三天期中考试的大四狗，我得滚去复习了……考完再弄……）</p>
 <p>[2016-11-05]</p>
 <p>考完C++回来看了一下博客，发现智能的 Typora 其实在幕后帮我做了很多事情……</p>
-<p>但是没有它之后就无所适从了。目前发现的 hexo markdown 渲染引擎和 Typora 不兼容的地方包括：</p>
+<p>但是没有它之后就无所适从了。目前发现的 hexo markdown 渲染引擎 (theme: NexT) 和 Typora 不兼容的地方包括：</p>
 <ul>
 <li><p>$\mathrm{\TeX}$ 数学公式</p>
 <p>在 Typora 里，像在 .tex 里输入一样直接写 TeX 代码就可以生成想要的公式；</p>
-<p>在原始的 markdown 里，像<code>\</code>，<code>.</code>，<code>_</code>等都被视为内部标识符。为了能正常使用 TeX 语法，需要对所有这些操作符用<code>\</code>转义，如表示换行的<code>\\</code>应写成<code>\\\\</code>（其实所有地方都要转义，只是数学公式这里有点出乎我的意料）。在 Code 环境里，不用管<code>\</code>。</p>
+<p>在原始的 markdown 里，像<code>\</code>，<code>.</code>，<code>_</code>等都被视为内部标识符。为了能正常使用 TeX 语法 (with MathJax)，需要对所有这些操作符用<code>\</code>转义，如表示换行的<code>\\</code>应写成<code>\\\\</code>（其实所有地方都要转义，只是数学公式这里有点出乎我的意料）。在 Code 环境里，不用管<code>\</code>。</p>
 <p>所以，朕现在只好先用 Typora 写好，再用 Sublime 打开逐个修改（转义后的 TeX 代码是不能被 Typora 解释的，所以在 Typora 里直接修改会显示错误，简直不堪入目）…………等学会了 Python，我想可以写个小脚本以替代人力。</p>
 </li>
 <li><p>表格</p>
@@ -310,7 +310,8 @@ Also, I found that emoji was not su">
 </li>
 <li><p>代码</p>
 <p>Typora 代码环境里，一个 Tab 等于八个空格。而且输入多少空格，它就会忠实地输出多少空格。</p>
-<p>然而看源码会发现，Typora 的缩进格式可能会比较奇怪，里面可能同时混杂有 Tab 和空格（我也不知道为什么……可能是因为代码是别处复制过来的，那里用的是若干空格作为缩进；复制到本地文件后自己再加入了 Tab 啥的……），这样渲染出的格式参差不齐。所以只好把所有缩进都删掉，然后用 Tab 实现（Markdown 代码环境里两个 Tab 渲染出来是4个空格）。</p>
+<p>然而看源码会发现，Typora 的缩进格式可能会比较奇怪，里面可能同时混杂有 Tab 和空格（我也不知道为什么……可能是因为代码是别处复制过来的，那里用的是若干空格作为缩进；复制到本地文件后自己再加入了 Tab 啥的……），这样渲染出的格式参差不齐。所以只好在 Sublime 里把所有缩进都删掉，然后用 Tab 实现（Sublime 里 2Tab 显示 4WS (经 hexo 均正确生成4WS)）。</p>
+<p>要是在 MarkdownPad2 里编辑，则 1Tab (生成8WS) 显示 4WS (生成4WS，正确)。</p>
 </li>
 <li><p>换行</p>
 <p>Typora 敲入回车后（包括列表换行进入下一列表项中时），新行与原来的行之间间距被自动放大，这样是有利于阅读的。Typora 在显示 .md 和生成 HTML 文件时都能很好地处理行距。</p>

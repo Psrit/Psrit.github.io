@@ -683,10 +683,19 @@
 <li>如果函数的返回值是类的对象，函数执行完成返回主调函数时，将使用 return 语句中的对象初始化一个临时无名对象，传递给主调函数，此时发生复制构造。（这种情况也可以通过移动构造避免不必要的复制）</li>
 </ul>
 </li>
-<li><strong>移动构造函数</strong>：<code>class_name(class_name &amp;&amp;)</code><br>&amp;&amp; 是右值引用；函数返回的临时变量是右值。</li>
+<li><p><strong>移动构造函数</strong>：<code>class_name(class_name &amp;&amp;)</code><br>&amp;&amp; 是右值引用；函数返回的临时变量是右值。简单点，可以看下面的例子：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="keyword">class</span> IntNum &#123;</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    IntNum(<span class="keyword">int</span> x = <span class="number">0</span>) : xptr(<span class="keyword">new</span> <span class="keyword">int</span>(x))&#123; <span class="comment">//构造函数</span></div><div class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"Calling constructor..."</span> &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">    &#125;</div><div class="line">    IntNum(<span class="keyword">const</span> IntNum &amp; n) : xptr(<span class="keyword">new</span> <span class="keyword">int</span>(*n.xptr))&#123;<span class="comment">//复制构造函数</span></div><div class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"Calling copy constructor..."</span> &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">    &#125;;</div><div class="line">    ~IntNum()&#123; <span class="comment">//析构函数</span></div><div class="line">        <span class="keyword">delete</span> xptr;</div><div class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"Destructing..."</span> &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="keyword">int</span> <span class="title">getInt</span><span class="params">()</span> </span>&#123; <span class="keyword">return</span> *xptr; &#125;</div><div class="line"><span class="keyword">private</span>:</div><div class="line">    <span class="keyword">int</span> *xptr;</div><div class="line">&#125;;</div><div class="line"><span class="comment">//返回值为IntNum类对象</span></div><div class="line"><span class="function">IntNum <span class="title">getNum</span><span class="params">()</span> </span>&#123;</div><div class="line">    IntNum a;</div><div class="line">    <span class="keyword">return</span> a;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;getNum().getInt()&lt;&lt;<span class="built_in">endl</span>;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>这时的输出为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">Calling constructor...</div><div class="line">Calling copy constructor...</div><div class="line">Destructing...</div><div class="line">0</div><div class="line">Destructing...</div></pre></td></tr></table></figure>
+<p>若向 IntNum 类中加入移动构造函数：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">IntNum(IntNum &amp;&amp; n): xptr(n.xptr)&#123; <span class="comment">// 移动构造函数，可以为那些像getNum()一样的函数，将需要返回的局部对象转移到主调函数，省去了构造和删除临时对象的过程。</span></div><div class="line">    n.xptr = <span class="literal">nullptr</span>; <span class="comment">// necessary</span></div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"Calling move constructor..."</span> &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>输出则变成：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">Calling constructor...</div><div class="line">Calling move constructor...</div><div class="line">Destructing...</div><div class="line">0</div><div class="line">Destructing...</div></pre></td></tr></table></figure>
+</li>
 </ul>
 </li>
-<li>析构函数<br>是在对象的生存期结束的时刻由系统自动调用的，先完成对象被删除前的一些清理工作，然后再释放此对象所属的空间。如果程序中未声明析构函数，编译器将<strong>自动产生</strong>一个默认的析构函数，其函数体为空。析构函数<strong>不接受任何参数</strong>。</li>
+<li><p>析构函数<br>是在对象的生存期结束的时刻由系统自动调用的，先完成对象被删除前的一些清理工作，然后再释放此对象所属的空间。如果程序中未声明析构函数，编译器将<strong>自动产生</strong>一个默认的析构函数，其函数体为空。析构函数<strong>不接受任何参数</strong>。</p>
+</li>
 </ul>
 <h3 id="类的组合"><a href="#类的组合" class="headerlink" title="类的组合"></a>类的组合</h3><ul>
 <li>构造组合类对象时的初始化次序：<ul>
@@ -912,11 +921,11 @@
 <p>作为还有三天期中考试的大四狗，我得滚去复习了……考完再弄……）</p>
 <p>[2016-11-05]</p>
 <p>考完C++回来看了一下博客，发现智能的 Typora 其实在幕后帮我做了很多事情……</p>
-<p>但是没有它之后就无所适从了。目前发现的 hexo markdown 渲染引擎和 Typora 不兼容的地方包括：</p>
+<p>但是没有它之后就无所适从了。目前发现的 hexo markdown 渲染引擎 (theme: NexT) 和 Typora 不兼容的地方包括：</p>
 <ul>
 <li><p>$\mathrm{\TeX}$ 数学公式</p>
 <p>在 Typora 里，像在 .tex 里输入一样直接写 TeX 代码就可以生成想要的公式；</p>
-<p>在原始的 markdown 里，像<code>\</code>，<code>.</code>，<code>_</code>等都被视为内部标识符。为了能正常使用 TeX 语法，需要对所有这些操作符用<code>\</code>转义，如表示换行的<code>\\</code>应写成<code>\\\\</code>（其实所有地方都要转义，只是数学公式这里有点出乎我的意料）。在 Code 环境里，不用管<code>\</code>。</p>
+<p>在原始的 markdown 里，像<code>\</code>，<code>.</code>，<code>_</code>等都被视为内部标识符。为了能正常使用 TeX 语法 (with MathJax)，需要对所有这些操作符用<code>\</code>转义，如表示换行的<code>\\</code>应写成<code>\\\\</code>（其实所有地方都要转义，只是数学公式这里有点出乎我的意料）。在 Code 环境里，不用管<code>\</code>。</p>
 <p>所以，朕现在只好先用 Typora 写好，再用 Sublime 打开逐个修改（转义后的 TeX 代码是不能被 Typora 解释的，所以在 Typora 里直接修改会显示错误，简直不堪入目）…………等学会了 Python，我想可以写个小脚本以替代人力。</p>
 </li>
 <li><p>表格</p>
@@ -925,7 +934,8 @@
 </li>
 <li><p>代码</p>
 <p>Typora 代码环境里，一个 Tab 等于八个空格。而且输入多少空格，它就会忠实地输出多少空格。</p>
-<p>然而看源码会发现，Typora 的缩进格式可能会比较奇怪，里面可能同时混杂有 Tab 和空格（我也不知道为什么……可能是因为代码是别处复制过来的，那里用的是若干空格作为缩进；复制到本地文件后自己再加入了 Tab 啥的……），这样渲染出的格式参差不齐。所以只好把所有缩进都删掉，然后用 Tab 实现（Markdown 代码环境里两个 Tab 渲染出来是4个空格）。</p>
+<p>然而看源码会发现，Typora 的缩进格式可能会比较奇怪，里面可能同时混杂有 Tab 和空格（我也不知道为什么……可能是因为代码是别处复制过来的，那里用的是若干空格作为缩进；复制到本地文件后自己再加入了 Tab 啥的……），这样渲染出的格式参差不齐。所以只好在 Sublime 里把所有缩进都删掉，然后用 Tab 实现（Sublime 里 2Tab 显示 4WS (经 hexo 均正确生成4WS)）。</p>
+<p>要是在 MarkdownPad2 里编辑，则 1Tab (生成8WS) 显示 4WS (生成4WS，正确)。</p>
 </li>
 <li><p>换行</p>
 <p>Typora 敲入回车后（包括列表换行进入下一列表项中时），新行与原来的行之间间距被自动放大，这样是有利于阅读的。Typora 在显示 .md 和生成 HTML 文件时都能很好地处理行距。</p>
