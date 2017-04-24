@@ -19,6 +19,7 @@ Also, I found that emoji was not supported... (although which is not something m
 作为还有三天期中考试的大四狗，我得滚去复习了……考完再弄……）
 
 
+<!-- more -->
 
 [2016-11-05]
 
